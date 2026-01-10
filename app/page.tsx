@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] text-[#efe9dc]">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(177,120,65,0.25),_transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(177,120,65,0.25),transparent_55%)]" />
       <div className="absolute -left-40 top-24 h-80 w-80 rounded-full bg-[#3a1f0a] opacity-60 blur-[120px]" />
-      <div className="absolute right-[-120px] top-10 h-96 w-96 rounded-full bg-[#0f2a33] opacity-70 blur-[140px]" />
+      <div className="absolute -right-30 top-10 h-96 w-96 rounded-full bg-[#0f2a33] opacity-70 blur-[140px]" />
 
       <main className="relative mx-auto flex w-full max-w-6xl flex-col gap-14 px-6 pb-24 pt-20 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12">
         <section className="space-y-8">
@@ -17,11 +17,9 @@ export default function Home() {
             <p className="text-sm uppercase tracking-[0.25em] text-white/60">
               Project Vectus
             </p>
-            <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight text-[#f7e9cf] sm:text-5xl lg:text-6xl">
+            <h1 className="font-(--font-display) text-4xl leading-tight text-[#f7e9cf] sm:text-5xl lg:text-6xl">
               Book One:{" "}
-              <span className="font-[var(--font-display)] italic">
-                I am Zoë
-              </span>
+              <span className="font-(--font-display) italic">I am Zoë</span>
             </h1>
             <p className="max-w-xl text-lg leading-8 text-white/70">
               A near-future science fiction series about ethical AI, human
@@ -84,7 +82,7 @@ export default function Home() {
 
         <section className="relative">
           <div className="absolute -left-10 top-20 h-40 w-40 rounded-full border border-white/10 bg-white/5 blur-2xl" />
-          <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-gradient-to-b from-white/10 via-white/5 to-transparent p-6 shadow-[0_40px_120px_-60px_rgba(0,0,0,0.95)]">
+          <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-linear-to-b from-white/10 via-white/5 to-transparent p-6 shadow-[0_40px_120px_-60px_rgba(0,0,0,0.95)]">
             <div className="mb-6 space-y-3 text-sm uppercase tracking-[0.3em] text-white/50">
               <p>Excerpt Request</p>
               <p className="text-white/70">Private delivery</p>

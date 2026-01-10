@@ -24,7 +24,8 @@ export async function POST(request: NextRequest) {
   const payload = {
     to: "glenn.hline@outlook.com",
     subject: `Excerpt One Request from ${firstName}`,
-    text: `Please send me excerpt one for Project Vectus Book One.\n\n${firstName}`,
+    text: `Please send me excerpt one for Project Vectus Book One.\n\nPlease send it to ${email}.\n\n${firstName}`,
+    html: `<p>Please send me excerpt one for Project Vectus Book One.</p><p>Please send it to <a href="mailto:${email}">${email}</a>.</p><p>${firstName}</p>`,
     replyTo: email,
   };
 

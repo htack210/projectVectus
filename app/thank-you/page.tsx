@@ -14,8 +14,9 @@ export default function ThankYouPage() {
         </h1>
         <div className="space-y-4 text-lg leading-8 text-white/75">
           <p>
-            I handle these requests personally. Look for the subject line:
-            Project Vectus Excerpt 1
+            I handle these requests personally. Please look for the subject
+            line:
+            <br /> Project Vectus Excerpt 1
           </p>
           <p>Sincerely,</p>
           <p className="text-xl font-semibold text-[#f2c37b]">Hedron Archer</p>
