@@ -2,63 +2,107 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] text-[#efe9dc]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(177,120,65,0.25),_transparent_55%)]" />
+      <div className="absolute -left-40 top-24 h-80 w-80 rounded-full bg-[#3a1f0a] opacity-60 blur-[120px]" />
+      <div className="absolute right-[-120px] top-10 h-96 w-96 rounded-full bg-[#0f2a33] opacity-70 blur-[140px]" />
+
+      <main className="relative mx-auto flex w-full max-w-6xl flex-col gap-14 px-6 pb-24 pt-20 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12">
+        <section className="space-y-8">
+          <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs uppercase tracking-[0.2em] text-white/70">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#f2c37b]" />
+            Hedron Archer
+          </div>
+          <div className="space-y-5">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/60">
+              Project Vectus
+            </p>
+            <h1 className="font-[var(--font-display)] text-4xl font-semibold leading-tight text-[#f7e9cf] sm:text-5xl lg:text-6xl">
+              Book One:{" "}
+              <span className="font-[var(--font-display)] italic">
+                I am Zoë
+              </span>
+            </h1>
+            <p className="max-w-xl text-lg leading-8 text-white/70">
+              A near-future science fiction series about ethical AI, human
+              consequence, and the cost of unchecked innovation.
+            </p>
+          </div>
+
+          <form
+            action="/api/request-excerpt"
+            method="post"
+            className="mt-8 space-y-5 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_30px_80px_-60px_rgba(0,0,0,0.9)] backdrop-blur"
           >
+            <div className="space-y-2">
+              <label
+                className="text-sm font-medium text-white/80"
+                htmlFor="firstName"
+              >
+                First name
+              </label>
+              <input
+                id="firstName"
+                name="firstName"
+                required
+                className="w-full rounded-xl border border-white/10 bg-[#0c0d10] px-4 py-3 text-base text-white/90 outline-none transition focus:border-[#f2c37b] focus:ring-2 focus:ring-[#f2c37b]/40"
+                placeholder="Enter your first name"
+                autoComplete="given-name"
+              />
+            </div>
+            <div className="space-y-2">
+              <label
+                className="text-sm font-medium text-white/80"
+                htmlFor="email"
+              >
+                Email address
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                className="w-full rounded-xl border border-white/10 bg-[#0c0d10] px-4 py-3 text-base text-white/90 outline-none transition focus:border-[#f2c37b] focus:ring-2 focus:ring-[#f2c37b]/40"
+                placeholder="you@domain.com"
+                autoComplete="email"
+              />
+            </div>
+            <button
+              type="submit"
+              className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#f2c37b] px-6 py-3 text-base font-semibold text-[#1c1207] transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(242,195,123,0.35)]"
+            >
+              Request Excerpt
+              <span className="text-lg transition group-hover:translate-x-1">
+                →
+              </span>
+            </button>
+            <p className="text-xs uppercase tracking-[0.2em] text-white/50">
+              Requests are handled personally by the author.
+            </p>
+          </form>
+        </section>
+
+        <section className="relative">
+          <div className="absolute -left-10 top-20 h-40 w-40 rounded-full border border-white/10 bg-white/5 blur-2xl" />
+          <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-gradient-to-b from-white/10 via-white/5 to-transparent p-6 shadow-[0_40px_120px_-60px_rgba(0,0,0,0.95)]">
+            <div className="mb-6 space-y-3 text-sm uppercase tracking-[0.3em] text-white/50">
+              <p>Excerpt Request</p>
+              <p className="text-white/70">Private delivery</p>
+            </div>
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/book-one-cover.png"
+              alt="Project Vectus - Book One: I am Zoë cover"
+              width={520}
+              height={780}
+              className="h-auto w-full rounded-2xl object-cover shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
+              priority
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+            <div className="mt-6 flex items-center justify-between text-xs uppercase tracking-[0.25em] text-white/50">
+              <span>Book One</span>
+              <span>First Contact</span>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
