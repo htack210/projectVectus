@@ -97,7 +97,7 @@ export default function Home() {
             />
             <div className="mt-6 flex items-center justify-between text-xs uppercase tracking-[0.25em] text-white/50">
               <span>Book One</span>
-              <span>First Contact</span>
+              <span>I am Zoë</span>
             </div>
           </div>
         </section>
