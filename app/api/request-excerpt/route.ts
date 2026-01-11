@@ -13,6 +13,7 @@ export async function POST(request: NextRequest) {
   const formData = await request.formData();
   const firstName = String(formData.get("firstName") || "").trim();
   const email = String(formData.get("email") || "").trim();
+  const notifyRelease = formData.get("notifyRelease") === "yes";
 
   if (!firstName || !email) {
     return NextResponse.json(
@@ -21,11 +22,18 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  const notifyLine = notifyRelease
+    ? "\n\nNotify me when the book is released."
+    : "";
+  const notifyHtml = notifyRelease
+    ? "<p>Notify me when the book is released.</p>"
+    : "";
+
   const payload = {
     to: "glenn.hline@outlook.com",
     subject: `Excerpt One Request from ${firstName}`,
-    text: `Please send me excerpt one for Project Vectus Book One.\n\nPlease send it to ${email}.\n\n${firstName}`,
-    html: `<p>Please send me excerpt one for Project Vectus Book One.</p><p>Please send it to <a href="mailto:${email}">${email}</a>.</p><p>${firstName}</p>`,
+    text: `Please send me excerpt one for Project Vectus Book One.\n\nPlease send it to ${email}.${notifyLine}\n\n${firstName}`,
+    html: `<p>Please send me excerpt one for Project Vectus Book One.</p><p>Please send it to <a href="mailto:${email}">${email}</a>.</p>${notifyHtml}<p>${firstName}</p>`,
     replyTo: email,
   };
 

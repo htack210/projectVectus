@@ -21,6 +21,12 @@ export default function Home() {
               Book One:{" "}
               <span className="font-(--font-display) italic">I am Zoë</span>
             </h1>
+            <p className="max-w-xl text-lg font-medium leading-8 text-white/85 sm:text-xl">
+              What happens when an artificial intelligence has unlimited
+              knowledge — but no lived wisdom?
+              <br />
+              What if it begins to act on its own conclusions?
+            </p>
             <p className="max-w-xl text-lg leading-8 text-white/70">
               A near-future science fiction series about ethical AI, human
               consequence, and the cost of unchecked innovation.
@@ -74,6 +80,19 @@ export default function Home() {
                 →
               </span>
             </button>
+            <div className="flex items-center gap-3 text-sm text-white/70">
+              <input
+                id="notifyRelease"
+                name="notifyRelease"
+                type="checkbox"
+                value="yes"
+                defaultChecked
+                className="h-4 w-4 rounded border border-white/30 bg-[#0c0d10] text-[#f2c37b] focus:ring-2 focus:ring-[#f2c37b]/40"
+              />
+              <label htmlFor="notifyRelease" className="select-none">
+                Notify me when this releases
+              </label>
+            </div>
             <p className="text-xs uppercase tracking-[0.2em] text-white/50">
               Requests are handled personally by the author.
             </p>
@@ -105,3 +124,5 @@ export default function Home() {
     </div>
   );
 }
+
+
