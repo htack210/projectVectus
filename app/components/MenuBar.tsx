@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const MenuBar = () => {
@@ -20,8 +21,14 @@ const MenuBar = () => {
             href="/" 
             className="flex items-center space-x-3 transition-opacity hover:opacity-80"
           >
-            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-[#f2c37b] to-[#d4a459] flex items-center justify-center">
-              <span className="text-[#0b0a0d] font-bold text-sm">V</span>
+            <div className="h-8 w-8 flex items-center justify-center">
+              <Image
+                src="/HedronLogoArrowSm.png"
+                alt="Project Vectus Logo"
+                width={32}
+                height={32}
+                className="object-contain"
+              />
             </div>
             <span className="font-medium text-[#f7e9cf] font-[family:var(--font-display)] text-lg">
               Project Vectus
