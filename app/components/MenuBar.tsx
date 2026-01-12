@@ -12,7 +12,7 @@ const MenuBar = () => {
   ];
 
   return (
-    <nav className="relative z-50 w-full border-b border-white/10 bg-[#0b0a0d]/90 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 w-full border-b border-white/10 bg-[#0b0a0d]/90 backdrop-blur-md">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo/Brand */}

@@ -11,7 +11,7 @@ import VanceCarrick from "@/assets/Sketch_VanceCarrick.png";
 
 export default function CharactersPage() {
   return (
-    <div className="min-h-screen bg-[#0b0a0d] text-[#efe9dc]">
+    <div className="min-h-screen bg-[#0b0a0d] text-[#efe9dc] pt-16">
       <main className="mx-auto w-full max-w-5xl px-6 pb-24 pt-16">
         <header className="mb-10">
           <p className="text-xs uppercase tracking-[0.35em] text-white/60">
