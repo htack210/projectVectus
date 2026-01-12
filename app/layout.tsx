@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Work_Sans } from "next/font/google";
 import "./globals.css";
+import MenuBar from "./components/MenuBar";
 
 const displayFont = Cormorant_Garamond({
   variable: "--font-display",
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${displayFont.variable} ${bodyFont.variable} antialiased`}>
+        <MenuBar />
         {children}
       </body>
     </html>

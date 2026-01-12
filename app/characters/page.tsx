@@ -404,6 +404,25 @@ export default function CharactersPage() {
             </section>
           </div>
         </div>
+
+        {/* Character Disclaimer - Footnote */}
+        <footer className="mt-16 border-t border-white/10 pt-8">
+          <div className="max-w-2xl">
+            <h3 className="text-xs uppercase tracking-[0.3em] text-white/50 mb-4">
+              About the Characters
+            </h3>
+            <div className="space-y-3 text-xs leading-relaxed text-white/40">
+              <p>
+                The characters featured in this story are fictional. Any resemblance to real people—whether 
+                in name, appearance, personality, or mannerisms—is coincidental.
+              </p>
+              <p>
+                These characters are shaped by narrative needs rather than real-world individuals, and any 
+                perceived similarities are unintended.
+              </p>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   );
