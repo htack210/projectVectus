@@ -27,6 +27,9 @@ export default function Home() {
               <br />
               What if it begins to act on its own conclusions?
             </p>
+             <p className="max-w-xl text-lg font-medium leading-8 text-white/85 sm:text-xl">
+              And what happens to the people caught in the crossfire?
+            </p>
             <p className="max-w-xl text-lg leading-8 text-white/70">
               A near-future science fiction series about ethical AI, human
               consequence, and the cost of unchecked innovation.
