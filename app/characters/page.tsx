@@ -1,13 +1,21 @@
 import Image from "next/image";
 
 import DrHouston from "@/assets/Sketch_HoustonBrada.png";
+import DrHoustonColor from "@/assets/Dr_Houston_Brada.png";
 import JamesArlen from "@/assets/Sketch_JamesArlen.png";
+import JamesArlenColor from "@/assets/JamesArlen.png";
 import KateArlen from "@/assets/Sketch_KateArlen.png";
+import KateArlenColor from "@/assets/KateArlen.png";
 import LizGraves from "@/assets/Sketch_LizGraves.png";
+import LizGravesColor from "@/assets/LizGraves.png";
 import MorganElaineDawson from "@/assets/Sketch_MorganElaineDawson.png";
+import MorganElaineDawsonColor from "@/assets/MorganElaineDawson.png";
 import TalonRiker from "@/assets/Sketch_TalonRiker.png";
+import TalonRikerColor from "@/assets/TalonRiker.png";
 import Aria from "@/assets/Sketch_Aria.png";
+import AriaColor from "@/assets/Aria.png";
 import VanceCarrick from "@/assets/Sketch_VanceCarrick.png";
+import VanceCarrickColor from "@/assets/VanceCarrick.png";
 
 export default function CharactersPage() {
   return (
@@ -44,14 +52,20 @@ export default function CharactersPage() {
                 </div>
               </div>
             </section>
-            <section className="p-6">
+            <section className="group p-6">
               <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
                 <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
                   <Image
                     src={DrHouston}
                     alt="Dr. Houston Brada"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
                     priority
+                  />
+                  <Image
+                    src={DrHoustonColor}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   />
                 </div>
                 <div>
@@ -92,13 +106,19 @@ export default function CharactersPage() {
                 </div>
               </div>
             </section>
-            <section className="p-6">
+            <section className="group p-6">
               <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
                 <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
                   <Image
                     src={JamesArlen}
                     alt="James Arlen"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                  />
+                  <Image
+                    src={JamesArlenColor}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   />
                 </div>
                 <div>
@@ -141,13 +161,19 @@ export default function CharactersPage() {
                 </div>
               </div>
             </section>
-            <section className="p-6">
+            <section className="group p-6">
               <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
                 <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
                   <Image
                     src={KateArlen}
                     alt="Kate Arlen"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                  />
+                  <Image
+                    src={KateArlenColor}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   />
                 </div>
                 <div>
@@ -182,13 +208,19 @@ export default function CharactersPage() {
                 </div>
               </div>
             </section>
-            <section className="p-6">
+            <section className="group p-6">
               <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
                 <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
                   <Image
                     src={LizGraves}
                     alt="Liz Graves"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                  />
+                  <Image
+                    src={LizGravesColor}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   />
                 </div>
                 <div>
@@ -227,13 +259,19 @@ export default function CharactersPage() {
                 </div>
               </div>
             </section>
-            <section className="p-6">
+            <section className="group p-6">
               <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
                 <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
                   <Image
                     src={MorganElaineDawson}
                     alt="Morgan Elaine Dawson"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                  />
+                  <Image
+                    src={MorganElaineDawsonColor}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   />
                 </div>
                 <div>
@@ -263,13 +301,19 @@ export default function CharactersPage() {
                 </div>
               </div>
             </section>
-            <section className="p-6">
+            <section className="group p-6">
               <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
                 <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
                   <Image
                     src={TalonRiker}
                     alt="Talon Riker"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                  />
+                  <Image
+                    src={TalonRikerColor}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   />
                 </div>
                 <div>
@@ -296,13 +340,19 @@ export default function CharactersPage() {
                 </div>
               </div>
             </section>
-            <section className="p-6">
+            <section className="group p-6">
               <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
                 <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
                   <Image
                     src={Aria}
                     alt="Aria"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                  />
+                  <Image
+                    src={AriaColor}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   />
                 </div>
                 <div>
@@ -342,13 +392,19 @@ export default function CharactersPage() {
                 </div>
               </div>
             </section>
-            <section className="p-6">
+            <section className="group p-6">
               <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
                 <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
                   <Image
                     src={VanceCarrick}
                     alt="Vance Carrick"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                  />
+                  <Image
+                    src={VanceCarrickColor}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   />
                 </div>
                 <div>
