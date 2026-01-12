@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-import DrHouston from "@/assets/Dr_Houston_Brada.png";
-import JamesArlen from "@/assets/JamesArlen.png";
-import KateArlen from "@/assets/KateArlen.png";
-import LizGraves from "@/assets/LizGraves.png";
-import MorganElaineDawson from "@/assets/MorganElaineDawson.png";
-import TalonRiker from "@/assets/TalonRiker.png";
-import Aria from "@/assets/Aria.png";
-import VanceCarrick from "@/assets/VanceCarrick.png";
+import DrHouston from "@/assets/Sketch_HoustonBrada.png";
+import JamesArlen from "@/assets/Sketch_JamesArlen.png";
+import KateArlen from "@/assets/Sketch_KateArlen.png";
+import LizGraves from "@/assets/Sketch_LizGraves.png";
+import MorganElaineDawson from "@/assets/Sketch_MorganElaineDawson.png";
+import TalonRiker from "@/assets/Sketch_TalonRiker.png";
+import Aria from "@/assets/Sketch_Aria.png";
+import VanceCarrick from "@/assets/Sketch_VanceCarrick.png";
 
 export default function CharactersPage() {
   return (
@@ -23,42 +23,38 @@ export default function CharactersPage() {
         </header>
 
         <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_35px_90px_-70px_rgba(0,0,0,0.9)]">
-          <table className="w-full border-collapse">
-            <tbody>
-              <tr>
-                <td className="w-full p-6 align-top sm:w-5/12">
-                  <p className="text-base font-semibold uppercase tracking-[0.2em] text-white/70">
-                    What is The Circle?
+          <div className="divide-y divide-white/10">
+            <section className="p-6">
+              <div className="space-y-6 sm:grid sm:grid-cols-[5fr_7fr] sm:gap-8 sm:space-y-0">
+                <p className="text-base font-semibold uppercase tracking-[0.2em] text-white/70">
+                  What is The Circle?
+                </p>
+                <div className="space-y-3 text-base leading-7 text-white/70">
+                  <p>
+                    <i>
+                      A covert organization operating at the edge of modern
+                      science, intelligence, and ethics.
+                    </i>
                   </p>
-                </td>
-                <td className="w-full p-6 align-top sm:w-7/12">
-                  <div className="space-y-3 text-base leading-7 text-white/70">
-                    <p>
-                      <i>
-                        A covert organization operating at the edge of modern
-                        science, intelligence, and ethics.
-                      </i>
-                    </p>
-                    <p>
-                      The Circle exists for one reason: to observe what others
-                      rush to build &mdash; and to ask whether it should exist
-                      at all.
-                    </p>
-                  </div>
-                </td>
-              </tr>
-              <tr className="group">
-                <td className="w-full p-6 align-top sm:w-5/12">
-                  <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] transition-transform duration-300 group-hover:scale-[1.02] sm:mx-0">
-                    <Image
-                      src={DrHouston}
-                      alt="Dr. Houston Brada"
-                      className="h-full w-full object-cover"
-                      priority
-                    />
-                  </div>
-                </td>
-                <td className="w-full p-6 align-top sm:w-7/12">
+                  <p>
+                    The Circle exists for one reason: to observe what others
+                    rush to build &mdash; and to ask whether it should exist at
+                    all.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section className="p-6">
+              <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
+                <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
+                  <Image
+                    src={DrHouston}
+                    alt="Dr. Houston Brada"
+                    className="h-full w-full object-cover"
+                    priority
+                  />
+                </div>
+                <div>
                   <div className="space-y-2">
                     <p className="text-lg font-semibold text-white/85">
                       Dr. Houston Brada
@@ -67,7 +63,7 @@ export default function CharactersPage() {
                       Founder of The Circle
                     </p>
                   </div>
-                  <div className="mt-4 max-h-0 space-y-4 overflow-hidden text-base leading-7 text-white/75 opacity-0 transition-all duration-300 group-hover:max-h-[1200px] group-hover:opacity-100">
+                  <div className="mt-4 space-y-4 text-base leading-7 text-white/75">
                     <p>
                       Long before the events of Book One, Brada made a discovery
                       that could have changed the human lifespan forever.
@@ -93,19 +89,19 @@ export default function CharactersPage() {
                       pauses to consider the consequences.
                     </p>
                   </div>
-                </td>
-              </tr>
-              <tr className="group">
-                <td className="w-full p-6 align-top sm:w-5/12">
-                  <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] transition-transform duration-300 group-hover:scale-[1.02] sm:mx-0">
-                    <Image
-                      src={JamesArlen}
-                      alt="James Arlen"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </td>
-                <td className="w-full p-6 align-top sm:w-7/12">
+                </div>
+              </div>
+            </section>
+            <section className="p-6">
+              <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
+                <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
+                  <Image
+                    src={JamesArlen}
+                    alt="James Arlen"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
                   <div className="space-y-2">
                     <p className="text-lg font-semibold text-white/85">
                       Dr. James Arlen
@@ -114,32 +110,47 @@ export default function CharactersPage() {
                       Lead Scientist &bull; Strategic Director
                     </p>
                   </div>
-                  <div className="mt-4 max-h-0 space-y-4 overflow-hidden text-base leading-7 text-white/75 opacity-0 transition-all duration-300 group-hover:max-h-[1200px] group-hover:opacity-100">
+                  <div className="mt-4 space-y-4 text-base leading-7 text-white/75">
                     <p>
-                      Arlen is Brada&apos;s protege &mdash; brilliant,
-                      disciplined, and driven by a belief that science must
-                      ultimately serve people.
+                      Dr. James Arlen stands at the intersection of medicine,
+                      neuroscience, and ethics. Where Brada is philosophical,
+                      Arlen is practical.
                     </p>
                     <p>
-                      Where Brada is philosophical, Arlen is practical. He
-                      understands theory, but he also understands pressure. When
-                      difficult decisions must be made, Arlen is the one who
-                      makes them.
+                      He holds both a medical degree and a doctorate in
+                      neuroscience, a combination that uniquely qualifies him to
+                      oversee work involving the human mind under extreme
+                      technological influence. Where others see systems or data,
+                      Arlen sees people — living brains, fragile bodies, and the
+                      long-term consequences of experimentation.
+                    </p>
+                    <p>
+                      Calm, methodical, and deeply principled, Arlen was
+                      mentored by The Circle’s founder and now carries much of
+                      its operational weight. He understands not only how
+                      advanced technologies function, but what they cost —
+                      physically, psychologically, and morally — when applied to
+                      human beings.
+                    </p>
+                    <p>
+                      When impossible decisions must be made, Arlen is the one
+                      responsible for ensuring that innovation does not outrun
+                      accountability.
                     </p>
                   </div>
-                </td>
-              </tr>
-              <tr className="group">
-                <td className="w-full p-6 align-top sm:w-5/12">
-                  <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] transition-transform duration-300 group-hover:scale-[1.02] sm:mx-0">
-                    <Image
-                      src={KateArlen}
-                      alt="Kate Arlen"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </td>
-                <td className="w-full p-6 align-top sm:w-7/12">
+                </div>
+              </div>
+            </section>
+            <section className="p-6">
+              <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
+                <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
+                  <Image
+                    src={KateArlen}
+                    alt="Kate Arlen"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
                   <div className="space-y-2">
                     <p className="text-lg font-semibold text-white/85">
                       Kate Arlen
@@ -148,54 +159,39 @@ export default function CharactersPage() {
                       Family &bull; Anchor &bull; Quiet Strength
                     </p>
                   </div>
-                  <div className="mt-4 max-h-0 space-y-4 overflow-hidden text-base leading-7 text-white/75 opacity-0 transition-all duration-300 group-hover:max-h-[1200px] group-hover:opacity-100">
+                  <div className="mt-4 space-y-4 text-base leading-7 text-white/75">
                     <p>
-                      Kate Arlen is the emotional counterweight to a life lived
-                      at the edge of ethical crisis.
+                      Kate Arlen is the quiet constant in a life shaped by
+                      extraordinary responsibility.{" "}
                     </p>
                     <p>
-                      Where James Arlen&apos;s world is defined by
-                      responsibility, consequence, and impossible decisions,
-                      Kate&apos;s is grounded in warmth, humor, and an
-                      unshakable sense of what actually matters. She is
-                      perceptive without being analytical, empathetic without
-                      being naive, and strong in ways that do not require
-                      authority or titles.
+                      Grounded, perceptive, and quietly strong, she understands
+                      the cost of the work her husband does — not in theory, but
+                      in the daily accumulation of late nights, difficult
+                      choices, and unspoken weight. She offers perspective when
+                      abstraction threatens to eclipse humanity, and steadiness
+                      when certainty becomes dangerous.
                     </p>
                     <p>
-                      Kate understands the cost of the work her husband does
-                      &mdash; not in theory, but in lived experience. Late
-                      nights. Interrupted conversations. The weight he carries
-                      home even when he tries not to. She does not compete with
-                      that weight; she absorbs it, steadies it, and sometimes
-                      quietly challenges it.
-                    </p>
-                    <p>
-                      She is not part of The Circle&apos;s operations, but she
-                      is part of its human center. In moments when the work
-                      threatens to eclipse the people behind it, Kate is the
-                      reminder that ethics are not abstract &mdash; they are
-                      personal.
-                    </p>
-                    <p>
-                      Calm, wry, and deeply grounded, Kate Arlen represents the
-                      life that exists beyond the mission &mdash; and the reason
-                      the mission matters at all.
+                      Kate is not part of The Circle’s operations, but she is
+                      part of its human reality — a reminder that ethics are
+                      lived, not debated, and that the consequences of progress
+                      always reach beyond the lab.
                     </p>
                   </div>
-                </td>
-              </tr>
-              <tr className="group">
-                <td className="w-full p-6 align-top sm:w-5/12">
-                  <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] transition-transform duration-300 group-hover:scale-[1.02] sm:mx-0">
-                    <Image
-                      src={LizGraves}
-                      alt="Liz Graves"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </td>
-                <td className="w-full p-6 align-top sm:w-7/12">
+                </div>
+              </div>
+            </section>
+            <section className="p-6">
+              <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
+                <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
+                  <Image
+                    src={LizGraves}
+                    alt="Liz Graves"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
                   <div className="space-y-2">
                     <p className="text-lg font-semibold text-white/85">
                       Dr. Elizabeth Graves
@@ -204,32 +200,43 @@ export default function CharactersPage() {
                       Chief Engineer
                     </p>
                   </div>
-                  <div className="mt-4 max-h-0 space-y-4 overflow-hidden text-base leading-7 text-white/75 opacity-0 transition-all duration-300 group-hover:max-h-[1200px] group-hover:opacity-100">
+                  <div className="mt-4 space-y-4 text-base leading-7 text-white/75">
                     <p>
                       Liz Graves is a systems genius who prefers machines to
                       people &mdash; not because she lacks empathy, but because
-                      machines make sense.
+                      machines make sense. She is one of the few people
+                      qualified to build a thinking machine — and then keep it
+                      alive.
                     </p>
                     <p>
-                      She designs advanced interfaces, medical systems, and
-                      containment technologies that keep the Circle operational.
-                      Precision is her language. Emotion is something she is
-                      still learning to translate.
+                      She holds both a medical degree and a doctorate in
+                      advanced robotics and artificial intelligence, a rare
+                      combination that places her at the intersection of human
+                      physiology and machine cognition. Where others design
+                      software or study the brain, Liz integrates mind, body,
+                      and code into a single system.
+                    </p>
+                    <p>
+                      Brilliant, blunt, and relentlessly precise, she prefers
+                      problems to people and solutions to conversation. Emotion
+                      does not guide her work — responsibility does. When
+                      intelligence is given a body, Liz is the one who
+                      understands what that truly means.
                     </p>
                   </div>
-                </td>
-              </tr>
-              <tr className="group">
-                <td className="w-full p-6 align-top sm:w-5/12">
-                  <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] transition-transform duration-300 group-hover:scale-[1.02] sm:mx-0">
-                    <Image
-                      src={MorganElaineDawson}
-                      alt="Morgan Elaine Dawson"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </td>
-                <td className="w-full p-6 align-top sm:w-7/12">
+                </div>
+              </div>
+            </section>
+            <section className="p-6">
+              <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
+                <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
+                  <Image
+                    src={MorganElaineDawson}
+                    alt="Morgan Elaine Dawson"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
                   <div className="space-y-2">
                     <p className="text-lg font-semibold text-white/85">
                       Morgan Dawson
@@ -238,30 +245,34 @@ export default function CharactersPage() {
                       Field Operative
                     </p>
                   </div>
-                  <div className="mt-4 max-h-0 space-y-4 overflow-hidden text-base leading-7 text-white/75 opacity-0 transition-all duration-300 group-hover:max-h-[1200px] group-hover:opacity-100">
+                  <div className="mt-4 space-y-4 text-base leading-7 text-white/75">
                     <p>
-                      Morgan Dawson is calm under pressure, highly trained, and
-                      exceptionally perceptive. She has built her life around
-                      control &mdash; of environments, of threats, and of
-                      herself.
+                      Morgan Dawson is The Circle’s point of contact with the
+                      real world.
+                    </p>
+                    <p>
+                      Her strength lies in control: of environments, of threats,
+                      and of herself. Beneath the professionalism is a sharp
+                      emotional intelligence she does not fully trust — one that
+                      allows her to read people as well as situations.
                     </p>
                     <p>
                       She believes distance keeps people safe. She may be wrong.
                     </p>
                   </div>
-                </td>
-              </tr>
-              <tr className="group">
-                <td className="w-full p-6 align-top sm:w-5/12">
-                  <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] transition-transform duration-300 group-hover:scale-[1.02] sm:mx-0">
-                    <Image
-                      src={TalonRiker}
-                      alt="Talon Riker"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </td>
-                <td className="w-full p-6 align-top sm:w-7/12">
+                </div>
+              </div>
+            </section>
+            <section className="p-6">
+              <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
+                <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
+                  <Image
+                    src={TalonRiker}
+                    alt="Talon Riker"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
                   <div className="space-y-2">
                     <p className="text-lg font-semibold text-white/85">
                       Talon Riker
@@ -270,7 +281,7 @@ export default function CharactersPage() {
                       Android Operative
                     </p>
                   </div>
-                  <div className="mt-4 max-h-0 space-y-4 overflow-hidden text-base leading-7 text-white/75 opacity-0 transition-all duration-300 group-hover:max-h-[1200px] group-hover:opacity-100">
+                  <div className="mt-4 space-y-4 text-base leading-7 text-white/75">
                     <p>
                       Talon was designed to be flawless: precise, loyal, and
                       fearless.
@@ -282,76 +293,116 @@ export default function CharactersPage() {
                       omission may matter more than anyone anticipated.
                     </p>
                   </div>
-                </td>
-              </tr>
-              <tr className="group">
-                <td className="w-full p-6 align-top sm:w-5/12">
-                  <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] transition-transform duration-300 group-hover:scale-[1.02] sm:mx-0">
-                    <Image
-                      src={Aria}
-                      alt="Aria"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </td>
-                <td className="w-full p-6 align-top sm:w-7/12">
+                </div>
+              </div>
+            </section>
+            <section className="p-6">
+              <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
+                <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
+                  <Image
+                    src={Aria}
+                    alt="Aria"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
                   <div className="space-y-2">
                     <p className="text-lg font-semibold text-white/85">Aria</p>
                     <p className="text-xs uppercase tracking-[0.2em] text-white/60">
-                      Android Adaptive AI System
+                      Android Operative • Protocol AI
                     </p>
                   </div>
-                  <div className="mt-4 max-h-0 space-y-4 overflow-hidden text-base leading-7 text-white/75 opacity-0 transition-all duration-300 group-hover:max-h-[1200px] group-hover:opacity-100">
+                  <div className="mt-4 space-y-4 text-base leading-7 text-white/75">
                     <p>
-                      Aria is an artificial intelligence learning humanity not
-                      through instruction &mdash; but through observation.
+                      Aria is an android intelligence designed to operate within
+                      human systems &mdash; not merely alongside them.
                     </p>
                     <p>
-                      She asks questions others avoid. She notices patterns
-                      others miss. And she is beginning to explore what it means
-                      to care.
+                      Trained as a protocol AI, she was built with a
+                      foundational understanding of human behavior, ethics, and
+                      social structure that allows her to anticipate, interpret,
+                      and adapt more fluidly than earlier models. Where Talon
+                      executes with precision, Aria analyzes with context.
+                    </p>
+                    <p>
+                      She possesses exceptional analytical and
+                      pattern-recognition capabilities, able to process complex
+                      situations quickly and identify inconsistencies others
+                      overlook. But understanding humanity in theory is not the
+                      same as living it. Aria is still learning the emotional
+                      nuance, ambiguity, and contradiction that define real
+                      human experience.
+                    </p>
+                    <p>
+                      Thoughtful, curious, and quietly observant, Aria exists in
+                      the space between knowledge and wisdom — capable, aware,
+                      and still becoming.
                     </p>
                   </div>
-                </td>
-              </tr>
-              <tr className="group">
-                <td className="w-full p-6 align-top sm:w-5/12">
-                  <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] transition-transform duration-300 group-hover:scale-[1.02] sm:mx-0">
-                    <Image
-                      src={VanceCarrick}
-                      alt="Vance Carrick"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                </td>
-                <td className="w-full p-6 align-top sm:w-7/12">
+                </div>
+              </div>
+            </section>
+            <section className="p-6">
+              <div className="sm:grid sm:grid-cols-[180px_1fr] sm:gap-8">
+                <div className="relative float-left mb-3 mr-4 aspect-[3/4] w-28 max-w-[140px] overflow-hidden rounded-2xl border border-white/10 bg-[#0c0d10] sm:float-none sm:mx-0 sm:mb-0 sm:mr-0 sm:w-full sm:max-w-[180px]">
+                  <Image
+                    src={VanceCarrick}
+                    alt="Vance Carrick"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
                   <div className="space-y-2">
                     <p className="text-lg font-semibold text-white/85">
                       Vance Carrick
                     </p>
                     <p className="text-xs uppercase tracking-[0.2em] text-white/60">
-                      Civilian Consultant
+                      Civilian • Human Interface • Reluctant Constant
                     </p>
                   </div>
-                  <div className="mt-4 max-h-0 space-y-4 overflow-hidden text-base leading-7 text-white/75 opacity-0 transition-all duration-300 group-hover:max-h-[1200px] group-hover:opacity-100">
+                  <div className="mt-4 space-y-4 text-base leading-7 text-white/75">
                     <p>
                       Vance is not a scientist. Not a soldier. Not an operative.
+                      <br />
+                      He never set out to be part of something larger than
+                      himself.
                     </p>
                     <p>
-                      He is a former athlete whose life was altered by forces he
-                      barely understands &mdash; and whose instincts often prove
-                      more valuable than raw data.
+                      A former high-school quarterback whose future was derailed
+                      by injury, Vance learned early what it means to lose the
+                      life you thought you were building. Humor became his
+                      defense, resilience his habit, and stubborn persistence
+                      his defining trait. When circumstances pull him into The
+                      Circle’s orbit, he brings no formal authority &mdash; only
+                      lived experience, instinct, and an unshakable sense of
+                      right and wrong.
                     </p>
                     <p>
-                      His presence inside the Circle raises an uncomfortable
-                      question:
+                      What sets Vance apart is not intelligence or training, but
+                      perspective. He understands pain, failure, loyalty, and
+                      forgiveness not as concepts, but as facts of daily life.
+                      Where others rely on models and probabilities, Vance
+                      reacts to people. He notices tone before data, intention
+                      before outcome.
                     </p>
-                    <p>What if being human is the missing variable?</p>
+                    <p>
+                      Unwillingly placed at the center of forces far beyond his
+                      control, Vance becomes something no one anticipated: a
+                      stabilizing presence in a world shaped by accelerating
+                      technology. He does not command. He does not calculate. He
+                      listens — and in doing so, asks questions that advanced
+                      systems were never designed to answer.
+                    </p>
+                    <p>
+                      At the heart of <i>Project Vectus</i>, Vance Carrick
+                      represents the variable that cannot be engineered: human
+                      judgment shaped by experience rather than optimization.
+                    </p>
                   </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </main>
     </div>
