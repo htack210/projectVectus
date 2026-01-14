@@ -9,7 +9,7 @@ const MenuBar = () => {
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'Characters', href: '/characters' },
+    // { label: 'Characters', href: '/characters' },
   ];
 
   return (
