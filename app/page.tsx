@@ -135,8 +135,8 @@ export default function Home() {
           <div className="absolute -left-10 top-20 h-40 w-40 rounded-full border border-white/10 bg-white/5 blur-2xl" />
           <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-linear-to-b from-white/10 via-white/5 to-transparent p-6 shadow-[0_40px_120px_-60px_rgba(0,0,0,0.95)]">
             <div className="mb-6 space-y-3 text-sm uppercase tracking-[0.3em] text-white/50">
-              <p>Excerpt Request</p>
-              <p className="text-white/70">Private delivery</p>
+              {/* <p>Excerpt Request</p>
+              <p className="text-white/70">Private delivery</p> */}
             </div>
             <Image
               src="/book-one-cover.png"
