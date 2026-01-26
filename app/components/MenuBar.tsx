@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const MenuBar = () => {
   const pathname = usePathname();
 
   const navItems = [
-    { label: 'Home', href: '/' },
-    // { label: 'Characters', href: '/characters' },
+    { label: "Home", href: "/" },
+    { label: "Characters", href: "/characters" },
   ];
 
   return (
@@ -17,8 +17,8 @@ const MenuBar = () => {
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo/Brand */}
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="flex items-center space-x-3 transition-opacity hover:opacity-80"
           >
             <div className="h-8 w-8 flex items-center justify-center">
@@ -47,8 +47,8 @@ const MenuBar = () => {
                     px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200
                     ${
                       isActive
-                        ? 'bg-white/10 text-[#f2c37b] shadow-sm'
-                        : 'text-white/70 hover:text-white/90 hover:bg-white/5'
+                        ? "bg-white/10 text-[#f2c37b] shadow-sm"
+                        : "text-white/70 hover:text-white/90 hover:bg-white/5"
                     }
                   `}
                 >
