@@ -22,21 +22,42 @@ export default function Home() {
               <span className="font-(--font-display) italic">I am Zoë</span>
             </h1>
             <p className="max-w-xl text-lg font-medium leading-8 text-white/85 sm:text-xl">
-              What happens when an artificial intelligence has unlimited
-              knowledge — but no lived wisdom?
+              <b>The Trial Was a Lie.</b>
               <br />
-              What if it begins to act on its own conclusions?
+              <b>Survival Was Just the Beginning.</b>
             </p>
-             <p className="max-w-xl text-lg font-medium leading-8 text-white/85 sm:text-xl">
-              And what happens to the people caught in the crossfire?
+            <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+              A promising medical breakthrough was actually an off-book
+              experiment at the edge of human biology and artificial
+              intelligence.
             </p>
-            <p className="max-w-xl text-lg leading-8 text-white/70">
-              A near-future science fiction series about ethical AI, human
-              consequence, and the cost of unchecked innovation.
+            <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+              Vance Carrick survived.
             </p>
+            <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+              But survival has consequences.{" "}
+            </p>
+            <details className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+              <summary className="cursor-pointer select-none text-base font-semibold text-[#f2c37b] transition hover:text-[#ffd7a4] focus:outline-none">
+                View more
+              </summary>
+              <div className="mt-4 space-y-5">
+                <p>
+                  As fragments of suppressed knowledge emerge, he is pulled into
+                  a struggle between corporate power, covert resistance, and an
+                  intelligence evolving beyond its intended limits.
+                </p>
+                <p>
+                  <span className="font-black">Project Vectus</span> is a tense,
+                  character-driven sci-fi thriller exploring ethical AI,
+                  control, and the dangerous gap between intelligence and
+                  wisdom.
+                </p>
+              </div>
+            </details>
           </div>
 
-          <form
+          {/* <form
             action="/api/request-excerpt"
             method="post"
             className="mt-8 space-y-5 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_30px_80px_-60px_rgba(0,0,0,0.9)] backdrop-blur"
@@ -99,7 +120,15 @@ export default function Home() {
             <p className="text-xs uppercase tracking-[0.2em] text-white/50">
               Requests are handled personally by the author.
             </p>
-          </form>
+          </form> */}
+          <a
+            href="https://www.amazon.com/dp/B0GJMQL3J8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-8 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#f2c37b] px-6 py-3 text-base font-semibold text-[#1c1207] transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(242,195,123,0.35)]"
+          >
+            Available Now on Amazon
+          </a>
         </section>
 
         <section className="relative">
@@ -127,5 +156,3 @@ export default function Home() {
     </div>
   );
 }
-
-
