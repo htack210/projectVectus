@@ -16,9 +16,41 @@ const bodyFont = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Project Vectus - Book One: I am Zoë",
+  title: {
+    default: "Project Vectus | Near-Future Science Fiction Thriller",
+    template: "%s | Project Vectus",
+  },
   description:
-    "Request an excerpt from Project Vectus - Book One: I am Zoë by Hedron Archer.",
+    "Project Vectus is a near-future science fiction series exploring ethical artificial intelligence, human consequence, and the dangers of technology advancing faster than conscience.",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title: "Project Vectus",
+    description:
+      "A near-future science fiction series examining ethical AI, covert experimentation, and the human cost of innovation.",
+    url: "https://projectvectus.com",
+    siteName: "Project Vectus",
+    images: [
+      {
+        url: "https://projectvectus.com/book-one-cover.png",
+        width: 1200,
+        height: 630,
+        alt: "Project Vectus book cover",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Project Vectus",
+    description:
+      "A near-future science fiction series exploring ethical artificial intelligence and human consequence.",
+    images: ["https://projectvectus.com/book-one-cover.png"],
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +60,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${displayFont.variable} ${bodyFont.variable} antialiased`}>
+      <body
+        className={`${displayFont.variable} ${bodyFont.variable} antialiased`}
+      >
         <MenuBar />
         {children}
       </body>
