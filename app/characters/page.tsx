@@ -277,7 +277,7 @@ export default function CharactersPage() {
                 <div>
                   <div className="space-y-2">
                     <p className="text-lg font-semibold text-white/85">
-                      Morgan Dawson
+                      Riley Morgan
                     </p>
                     <p className="text-xs uppercase tracking-[0.2em] text-white/60">
                       Field Operative
@@ -285,7 +285,7 @@ export default function CharactersPage() {
                   </div>
                   <div className="mt-4 space-y-4 text-base leading-7 text-white/75">
                     <p>
-                      Morgan Dawson is The Circle’s point of contact with the
+                      Riley Morgan is The Circle’s point of contact with the
                       real world.
                     </p>
                     <p>
@@ -469,12 +469,14 @@ export default function CharactersPage() {
             </h3>
             <div className="space-y-3 text-xs leading-relaxed text-white/40">
               <p>
-                The characters featured in this story are fictional. Any resemblance to real people—whether 
-                in name, appearance, personality, or mannerisms—is coincidental.
+                The characters featured in this story are fictional. Any
+                resemblance to real people—whether in name, appearance,
+                personality, or mannerisms—is coincidental.
               </p>
               <p>
-                These characters are shaped by narrative needs rather than real-world individuals, and any 
-                perceived similarities are unintended.
+                These characters are shaped by narrative needs rather than
+                real-world individuals, and any perceived similarities are
+                unintended.
               </p>
             </div>
           </div>
