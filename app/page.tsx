@@ -151,6 +151,16 @@ export default function Home() {
               <span>I am Zoë</span>
             </div>
           </div>
+          <div className="mt-6 text-center text-[10px] tracking-wide text-white/40">
+  Contact author at{" "}
+  <a
+    href="mailto:h.archer@projectvectus.com"
+    className="underline hover:text-white/70 transition-colors"
+  >
+    h.archer@projectvectus.com
+  </a>
+</div>
+
         </section>
       </main>
     </div>
