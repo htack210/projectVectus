@@ -129,6 +129,24 @@ export default function Home() {
           >
             Available Now on Amazon
           </a>
+          <a
+            href="https://www.facebook.com/ntspeak/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white/80 transition hover:-translate-y-0.5 hover:border-white/40 hover:text-white"
+          >
+            <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#1877f2] text-white">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+                className="h-3.5 w-3.5 fill-current"
+              >
+                <path d="M13.5 9H16V6h-2.5C11.6 6 10 7.6 10 9.5V11H8v3h2v7h3v-7h2.6l.4-3H13V9.6c0-.3.2-.6.5-.6z" />
+              </svg>
+            </span>
+            Follow me on Facebook
+          </a>
         </section>
 
         <section className="relative">
