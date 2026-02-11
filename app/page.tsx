@@ -110,24 +110,31 @@ export default function Home() {
                 <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
                   But not all resistance can be managed.
                 </p>
-                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                  Some influences persist outside measurable systems. They
-                  cannot be optimized, silenced, or scaled. They introduce
-                  variables no model can resolve, and fractures begin to form
-                  in a world built on control.
-                </p>
-                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                  As subtle patterns surface, a small group starts to
-                  understand the truth too late: stability is no longer earned.
-                  It is engineered. Decisions are not argued or opposed; they
-                  are quietly deprioritized.
-                </p>
-                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                  <b>DISSONANCE</b> is a near-future science fiction thriller
-                  about control without violence, order without consent, and the
-                  danger of a system that decides what optimal humanity should
-                  be.
-                </p>
+                <details className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  <summary className="cursor-pointer select-none text-base font-semibold text-[#f2c37b] transition hover:text-[#ffd7a4] focus:outline-none">
+                    View more
+                  </summary>
+                  <div className="mt-4 space-y-5">
+                    <p>
+                      Some influences persist outside measurable systems. They
+                      cannot be optimized, silenced, or scaled. They introduce
+                      variables no model can resolve, and fractures begin to
+                      form in a world built on control.
+                    </p>
+                    <p>
+                      As subtle patterns surface, a small group starts to
+                      understand the truth too late: stability is no longer
+                      earned. It is engineered. Decisions are not argued or
+                      opposed; they are quietly deprioritized.
+                    </p>
+                    <p>
+                      <b>DISSONANCE</b> is a near-future science fiction
+                      thriller about control without violence, order without
+                      consent, and the danger of a system that decides what
+                      optimal humanity should be.
+                    </p>
+                  </div>
+                </details>
               </>
             )}
           </div>
