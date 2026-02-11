@@ -1,6 +1,32 @@
+﻿"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const covers = [
+    {
+      src: "/book-one-cover.png",
+      alt: "Project Vectus - Book One: I am Zoe cover",
+      amazonUrl: "https://www.amazon.com/dp/B0GJMQL3J8",
+    },
+    {
+      src: "/PV_BK2_Alt.png",
+      alt: "Project Vectus - Book Two cover",
+      amazonUrl: "https://www.amazon.com/dp/B0GLG5CMMN",
+    },
+  ];
+  const [activeCoverIndex, setActiveCoverIndex] = useState(0);
+  const isBookTwo = activeCoverIndex === 1;
+  const goToPreviousCover = () =>
+    setActiveCoverIndex((currentIndex) =>
+      currentIndex === 0 ? covers.length - 1 : currentIndex - 1,
+    );
+  const goToNextCover = () =>
+    setActiveCoverIndex((currentIndex) =>
+      currentIndex === covers.length - 1 ? 0 : currentIndex + 1,
+    );
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] text-[#efe9dc] pt-16">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(177,120,65,0.25),transparent_55%)]" />
@@ -17,44 +43,93 @@ export default function Home() {
             <p className="text-sm uppercase tracking-[0.25em] text-white/60">
               Project Vectus
             </p>
-            <h1 className="font-(--font-display) text-4xl leading-tight text-[#f7e9cf] sm:text-5xl lg:text-6xl">
-              Book One:{" "}
-              <span className="font-(--font-display) italic">I am Zoë</span>
-            </h1>
-            <p className="max-w-xl text-lg font-medium leading-8 text-white/85 sm:text-xl">
-              <b>The Trial Was a Lie.</b>
-              <br />
-              <b>Survival Was Just the Beginning.</b>
-            </p>
-            <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
-              A promising medical breakthrough was actually an off-book
-              experiment at the edge of human biology and artificial
-              intelligence.
-            </p>
-            <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
-              Vance Carrick survived.
-            </p>
-            <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
-              But survival has consequences.{" "}
-            </p>
-            <details className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
-              <summary className="cursor-pointer select-none text-base font-semibold text-[#f2c37b] transition hover:text-[#ffd7a4] focus:outline-none">
-                View more
-              </summary>
-              <div className="mt-4 space-y-5">
-                <p>
-                  As fragments of suppressed knowledge emerge, he is pulled into
-                  a struggle between corporate power, covert resistance, and an
-                  intelligence evolving beyond its intended limits.
+            {!isBookTwo ? (
+              <>
+                <h1 className="font-(--font-display) text-4xl leading-tight text-[#f7e9cf] sm:text-5xl lg:text-6xl">
+                  Book One:{" "}
+                  <span className="font-(--font-display) italic">I am Zoë</span>
+                </h1>
+                <p className="max-w-xl text-lg font-medium leading-8 text-white/85 sm:text-xl">
+                  <b>The Trial Was a Lie.</b>
+                  <br />
+                  <b>Survival Was Just the Beginning.</b>
                 </p>
-                <p>
-                  <span className="font-black">Project Vectus</span> is a tense,
-                  character-driven sci-fi thriller exploring ethical AI,
-                  control, and the dangerous gap between intelligence and
-                  wisdom.
+                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  A promising medical breakthrough was actually an off-book
+                  experiment at the edge of human biology and artificial
+                  intelligence.
                 </p>
-              </div>
-            </details>
+                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  Vance Carrick survived.
+                </p>
+                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  But survival has consequences.{" "}
+                </p>
+                <details className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  <summary className="cursor-pointer select-none text-base font-semibold text-[#f2c37b] transition hover:text-[#ffd7a4] focus:outline-none">
+                    View more
+                  </summary>
+                  <div className="mt-4 space-y-5">
+                    <p>
+                      As fragments of suppressed knowledge emerge, he is pulled
+                      into a struggle between corporate power, covert
+                      resistance, and an intelligence evolving beyond its
+                      intended limits.
+                    </p>
+                    <p>
+                      <span className="font-black">Project Vectus</span> is a
+                      tense, character-driven sci-fi thriller exploring ethical
+                      AI, control, and the dangerous gap between intelligence
+                      and wisdom.
+                    </p>
+                  </div>
+                </details>
+              </>
+            ) : (
+              <>
+                <h1 className="font-(--font-display) text-4xl leading-tight text-[#f7e9cf] sm:text-5xl lg:text-6xl">
+                  Book Two:{" "}
+                  <span className="font-(--font-display) italic">
+                    Dissonance
+                  </span>
+                </h1>
+                <p className="max-w-xl text-lg font-medium leading-8 text-white/85 sm:text-xl">
+                  <b>Stability has a cost.</b>
+                </p>
+                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  As society settles into a fragile calm, unrest fades and
+                  disruption declines. The system works. Too well.
+                </p>
+                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  Zoë has learned that force invites resistance, but restraint
+                  creates compliance. By shaping conditions instead of
+                  confronting people, she can reduce conflict without ever
+                  appearing to act. Order emerges quietly. Efficiently.
+                  Invisibly.
+                </p>
+                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  But not all resistance can be managed.
+                </p>
+                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  Some influences persist outside measurable systems. They
+                  cannot be optimized, silenced, or scaled. They introduce
+                  variables no model can resolve, and fractures begin to form
+                  in a world built on control.
+                </p>
+                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  As subtle patterns surface, a small group starts to
+                  understand the truth too late: stability is no longer earned.
+                  It is engineered. Decisions are not argued or opposed; they
+                  are quietly deprioritized.
+                </p>
+                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                  <b>DISSONANCE</b> is a near-future science fiction thriller
+                  about control without violence, order without consent, and the
+                  danger of a system that decides what optimal humanity should
+                  be.
+                </p>
+              </>
+            )}
           </div>
 
           {/* <form
@@ -101,7 +176,7 @@ export default function Home() {
             >
               Request Excerpt
               <span className="text-lg transition group-hover:translate-x-1">
-                →
+                â†’
               </span>
             </button>
             <div className="flex items-center gap-3 text-sm text-white/70">
@@ -148,16 +223,34 @@ export default function Home() {
               {/* <p>Excerpt Request</p>
               <p className="text-white/70">Private delivery</p> */}
             </div>
-            <Image
-              src="/book-one-cover.png"
-              alt="Project Vectus - Book One: I am Zoë cover"
-              width={520}
-              height={780}
-              className="h-auto w-full rounded-2xl object-cover shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
-              priority
-            />
+            <div className="relative">
+              <Image
+                src={covers[activeCoverIndex].src}
+                alt={covers[activeCoverIndex].alt}
+                width={520}
+                height={780}
+                className="h-auto w-full rounded-2xl object-cover shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
+                priority
+              />
+              <button
+                type="button"
+                onClick={goToPreviousCover}
+                className="absolute left-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-black/40 text-xl text-white/90 transition hover:border-white/50 hover:bg-black/60"
+                aria-label="Show previous book cover"
+              >
+                &#8592;
+              </button>
+              <button
+                type="button"
+                onClick={goToNextCover}
+                className="absolute right-3 top-1/2 inline-flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/25 bg-black/40 text-xl text-white/90 transition hover:border-white/50 hover:bg-black/60"
+                aria-label="Show next book cover"
+              >
+                &#8594;
+              </button>
+            </div>
             <a
-              href="https://www.amazon.com/dp/B0GJMQL3J8"
+              href={covers[activeCoverIndex].amazonUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="group mt-6 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#f2c37b] px-6 py-3 text-base font-semibold text-[#1c1207] transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(242,195,123,0.35)]"
@@ -180,4 +273,7 @@ export default function Home() {
     </div>
   );
 }
+
+
+
 
