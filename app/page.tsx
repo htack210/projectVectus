@@ -122,14 +122,6 @@ export default function Home() {
             </p>
           </form> */}
           <a
-            href="https://www.amazon.com/dp/B0GJMQL3J8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group mt-8 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#f2c37b] px-6 py-3 text-base font-semibold text-[#1c1207] transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(242,195,123,0.35)]"
-          >
-            Available Now on Amazon
-          </a>
-          <a
             href="https://www.facebook.com/ntspeak/"
             target="_blank"
             rel="noopener noreferrer"
@@ -164,10 +156,14 @@ export default function Home() {
               className="h-auto w-full rounded-2xl object-cover shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
               priority
             />
-            <div className="mt-6 flex items-center justify-between text-xs uppercase tracking-[0.25em] text-white/50">
-              <span>Book One</span>
-              <span>I am Zoë</span>
-            </div>
+            <a
+              href="https://www.amazon.com/dp/B0GJMQL3J8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-6 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#f2c37b] px-6 py-3 text-base font-semibold text-[#1c1207] transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(242,195,123,0.35)]"
+            >
+              Available on Amazon
+            </a>
           </div>
           <div className="mt-6 text-center text-[10px] tracking-wide text-white/40">
   Contact author at{" "}
@@ -184,3 +180,4 @@ export default function Home() {
     </div>
   );
 }
+
