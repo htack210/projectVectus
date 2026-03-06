@@ -9,6 +9,7 @@ const MenuBar = () => {
 
   const navItems = [
     { label: "Home", href: "/" },
+    { label: "Author", href: "/author" },
     { label: "Characters", href: "/characters" },
   ];
 

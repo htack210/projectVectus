@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import kindleUnlimitedLogo from "@/assets/kindle-unlimited-logo-cropped.png";
 
 export default function Home() {
   const covers = [
@@ -16,7 +17,10 @@ export default function Home() {
       amazonUrl: "https://www.amazon.com/dp/B0GLG5CMMN",
     },
   ];
+
   const [activeCoverIndex, setActiveCoverIndex] = useState(0);
+  const kindleLogoWidth = Math.round(kindleUnlimitedLogo.width * 0.3);
+  const kindleLogoHeight = Math.round(kindleUnlimitedLogo.height * 0.3);
   const isBookTwo = activeCoverIndex === 1;
   const goToPreviousCover = () =>
     setActiveCoverIndex((currentIndex) =>
@@ -28,7 +32,7 @@ export default function Home() {
     );
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] text-[#efe9dc] pt-16">
+    <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] pt-16 text-[#efe9dc]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(177,120,65,0.25),transparent_55%)]" />
       <div className="absolute -left-40 top-24 h-80 w-80 rounded-full bg-[#3a1f0a] opacity-60 blur-[120px]" />
       <div className="absolute -right-30 top-10 h-96 w-96 rounded-full bg-[#0f2a33] opacity-70 blur-[140px]" />
@@ -139,70 +143,6 @@ export default function Home() {
             )}
           </div>
 
-          {/* <form
-            action="/api/request-excerpt"
-            method="post"
-            className="mt-8 space-y-5 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_30px_80px_-60px_rgba(0,0,0,0.9)] backdrop-blur"
-          >
-            <div className="space-y-2">
-              <label
-                className="text-sm font-medium text-white/80"
-                htmlFor="firstName"
-              >
-                First name
-              </label>
-              <input
-                id="firstName"
-                name="firstName"
-                required
-                className="w-full rounded-xl border border-white/10 bg-[#0c0d10] px-4 py-3 text-base text-white/90 outline-none transition focus:border-[#f2c37b] focus:ring-2 focus:ring-[#f2c37b]/40"
-                placeholder="Enter your first name"
-                autoComplete="given-name"
-              />
-            </div>
-            <div className="space-y-2">
-              <label
-                className="text-sm font-medium text-white/80"
-                htmlFor="email"
-              >
-                Email address
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                className="w-full rounded-xl border border-white/10 bg-[#0c0d10] px-4 py-3 text-base text-white/90 outline-none transition focus:border-[#f2c37b] focus:ring-2 focus:ring-[#f2c37b]/40"
-                placeholder="you@domain.com"
-                autoComplete="email"
-              />
-            </div>
-            <button
-              type="submit"
-              className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#f2c37b] px-6 py-3 text-base font-semibold text-[#1c1207] transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(242,195,123,0.35)]"
-            >
-              Request Excerpt
-              <span className="text-lg transition group-hover:translate-x-1">
-                â†’
-              </span>
-            </button>
-            <div className="flex items-center gap-3 text-sm text-white/70">
-              <input
-                id="notifyRelease"
-                name="notifyRelease"
-                type="checkbox"
-                value="yes"
-                defaultChecked
-                className="h-4 w-4 rounded border border-white/30 bg-[#0c0d10] text-[#f2c37b] focus:ring-2 focus:ring-[#f2c37b]/40"
-              />
-              <label htmlFor="notifyRelease" className="select-none">
-                Notify me when this releases
-              </label>
-            </div>
-            <p className="text-xs uppercase tracking-[0.2em] text-white/50">
-              Requests are handled personally by the author.
-            </p>
-          </form> */}
           <a
             href="https://www.facebook.com/ntspeak/"
             target="_blank"
@@ -226,10 +166,7 @@ export default function Home() {
         <section className="relative">
           <div className="absolute -left-10 top-20 h-40 w-40 rounded-full border border-white/10 bg-white/5 blur-2xl" />
           <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-linear-to-b from-white/10 via-white/5 to-transparent p-6 shadow-[0_40px_120px_-60px_rgba(0,0,0,0.95)]">
-            <div className="mb-6 space-y-3 text-sm uppercase tracking-[0.3em] text-white/50">
-              {/* <p>Excerpt Request</p>
-              <p className="text-white/70">Private delivery</p> */}
-            </div>
+            <div className="mb-6 space-y-3 text-sm uppercase tracking-[0.3em] text-white/50" />
             <div className="relative">
               <Image
                 src={covers[activeCoverIndex].src}
@@ -262,25 +199,29 @@ export default function Home() {
               rel="noopener noreferrer"
               className="group mt-6 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#f2c37b] px-6 py-3 text-base font-semibold text-[#1c1207] transition hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(242,195,123,0.35)]"
             >
-              Available on Amazon
+              Buy Now on Amazon
             </a>
           </div>
+          <div className="mt-6 flex justify-center">
+            <Image
+              src={kindleUnlimitedLogo}
+              alt="Kindle Unlimited"
+              width={kindleLogoWidth}
+              height={kindleLogoHeight}
+              className="h-auto"
+            />
+          </div>
           <div className="mt-6 text-center text-[10px] tracking-wide text-white/40">
-  Contact author at{" "}
-  <a
-    href="mailto:h.archer@projectvectus.com"
-    className="underline hover:text-white/70 transition-colors"
-  >
-    h.archer@projectvectus.com
-  </a>
-</div>
-
+            Contact author at{" "}
+            <a
+              href="mailto:h.archer@projectvectus.com"
+              className="underline transition-colors hover:text-white/70"
+            >
+              h.archer@projectvectus.com
+            </a>
+          </div>
         </section>
       </main>
     </div>
   );
 }
-
-
-
-
