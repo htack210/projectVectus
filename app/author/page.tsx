@@ -67,7 +67,7 @@ export default function AuthorPage() {
                   human life.
                 </p>
                 <p>
-                  He lives near atlanta, Georgia and writes stories that combine
+                  He lives near Atlanta, Georgia and writes stories that combine
                   suspense, emerging technology, and thoughtful Christian themes
                   — exploring what happens when powerful technology collides
                   with the human soul.
