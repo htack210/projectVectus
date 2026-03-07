@@ -161,6 +161,12 @@ export default function Home() {
             </span>
             Follow me on Facebook
           </a>
+          <a
+            href="/newsletter"
+            className="mt-3 inline-flex w-full items-center justify-center rounded-full border border-[#f2c37b]/40 bg-[#f2c37b]/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#f7e9cf] transition hover:-translate-y-0.5 hover:border-[#f2c37b]/70 hover:bg-[#f2c37b]/25"
+          >
+            Sign up for the newsletter
+          </a>
         </section>
 
         <section className="relative">
