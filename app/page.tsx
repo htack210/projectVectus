@@ -5,6 +5,80 @@ import { useState } from "react";
 import kindleUnlimitedLogo from "@/assets/kindle-unlimited-logo-cropped.png";
 
 export default function Home() {
+  const homeStructuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://projectvectus.com/#website",
+        url: "https://projectvectus.com/",
+        name: "Project Vectus",
+        description:
+          "Near-future science fiction series exploring ethical artificial intelligence and human consequence.",
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://projectvectus.com/#organization",
+        name: "Project Vectus",
+        url: "https://projectvectus.com/",
+        sameAs: ["https://www.facebook.com/ntspeak/"],
+      },
+      {
+        "@type": "BookSeries",
+        "@id": "https://projectvectus.com/#series",
+        name: "Project Vectus",
+        author: {
+          "@type": "Person",
+          name: "Glenn Haertlein",
+          alternateName: "Hedron Archer",
+        },
+        hasPart: [
+          {
+            "@type": "Book",
+            name: "Project Vectus Book One: I am Zoe",
+            url: "https://www.amazon.com/dp/B0GJMQL3J8",
+          },
+          {
+            "@type": "Book",
+            name: "Project Vectus Book Two: Dissonance",
+            url: "https://www.amazon.com/dp/B0GLG5CMMN",
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://projectvectus.com/#faq",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is Project Vectus about?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Project Vectus is a near-future science fiction series about ethical AI, control, and the human cost of technology.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Where can I start reading?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Start with Book One: I am Zoe, then continue with Book Two: Dissonance.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How can I get updates?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Use the newsletter sign-up page at /newsletter to receive updates.",
+            },
+          },
+        ],
+      },
+    ],
+  };
+
   const covers = [
     {
       src: "/book-one-cover.png",
@@ -33,6 +107,12 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] pt-16 text-[#efe9dc]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homeStructuredData),
+        }}
+      />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(177,120,65,0.25),transparent_55%)]" />
       <div className="absolute -left-40 top-24 h-80 w-80 rounded-full bg-[#3a1f0a] opacity-60 blur-[120px]" />
       <div className="absolute -right-30 top-10 h-96 w-96 rounded-full bg-[#0f2a33] opacity-70 blur-[140px]" />
@@ -225,6 +305,42 @@ export default function Home() {
             >
               h.archer@projectvectus.com
             </a>
+          </div>
+        </section>
+
+        <section className="lg:col-span-2">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h2 className="font-(--font-display) text-2xl text-[#f7e9cf] sm:text-3xl">
+              FAQ
+            </h2>
+            <div className="mt-4 space-y-4 text-white/85">
+              <div>
+                <h3 className="font-semibold text-[#f2c37b]">
+                  What is Project Vectus about?
+                </h3>
+                <p>
+                  A near-future sci-fi series exploring ethical AI, control,
+                  and the human cost of innovation.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#f2c37b]">
+                  Where should I start?
+                </h3>
+                <p>
+                  Begin with Book One: <i>I am Zoe</i>, then continue with Book
+                  Two: <i>Dissonance</i>.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#f2c37b]">
+                  How do I get updates?
+                </h3>
+                <p>
+                  Visit <a href="/newsletter" className="underline">/newsletter</a> to sign up.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>

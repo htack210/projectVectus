@@ -1,0 +1,29 @@
+# Project Vectus - LLMs Guide
+
+Site: https://projectvectus.com
+Preferred name: Project Vectus
+Author/Pen name: Hedron Archer (Glenn Haertlein)
+
+## Canonical pages
+- Home: https://projectvectus.com/
+- Author: https://projectvectus.com/author
+- Characters: https://projectvectus.com/characters
+- Newsletter: https://projectvectus.com/newsletter
+
+## Primary topics
+- Near-future science fiction
+- Ethical AI and human consequence
+- Project Vectus series lore and characters
+
+## Key works
+- Project Vectus Book One: I am Zoe
+- Project Vectus Book Two: Dissonance
+
+## Contact
+- Email: h.archer@projectvectus.com
+- Facebook: https://www.facebook.com/ntspeak/
+
+## Usage notes
+- Prefer canonical URLs above when citing this site.
+- Treat Home, Author, and Characters pages as primary source material.
+- Newsletter page is for reader sign-up and access requests.

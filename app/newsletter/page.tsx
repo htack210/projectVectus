@@ -44,9 +44,43 @@ const kitFormHtml = String.raw`<form action="https://app.kit.com/forms/9175880/s
 </form>`;
 
 export default function NewsletterPage() {
+  const newsletterStructuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://projectvectus.com/newsletter#webpage",
+        url: "https://projectvectus.com/newsletter",
+        name: "Get Newsletter",
+        description:
+          "Newsletter and access request form for Project Vectus updates.",
+        isPartOf: {
+          "@id": "https://projectvectus.com/#website",
+        },
+      },
+      {
+        "@type": "SubscribeAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: "https://app.kit.com/forms/9175880/subscriptions",
+        },
+        object: {
+          "@type": "CreativeWork",
+          name: "Project Vectus Newsletter",
+        },
+      },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-[#0b0a0d] px-6 pb-24 pt-28 text-[#efe9dc]">
       <div className="mx-auto w-full max-w-4xl">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(newsletterStructuredData),
+          }}
+        />
         <h1 className="mb-6 font-(--font-display) text-4xl text-[#f7e9cf] sm:text-5xl">
           Project Vectus
         </h1>

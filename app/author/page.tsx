@@ -2,11 +2,42 @@ import Image from "next/image";
 import authorImage from "../../assets/AuthotNormal.png";
 
 export default function AuthorPage() {
+  const authorStructuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://projectvectus.com/author#person",
+        name: "Glenn Haertlein",
+        alternateName: "Hedron Archer",
+        url: "https://projectvectus.com/author",
+        description:
+          "Science fiction author exploring the intersection of technology, ethics, and faith.",
+        sameAs: ["https://www.facebook.com/ntspeak/"],
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://projectvectus.com/author#profile",
+        url: "https://projectvectus.com/author",
+        name: "Author - Glenn Haertlein",
+        mainEntity: {
+          "@id": "https://projectvectus.com/author#person",
+        },
+      },
+    ],
+  };
+
   const scaledWidth = Math.round(authorImage.width * 0.6);
   const scaledHeight = Math.round(authorImage.height * 0.6);
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] pt-16 text-[#efe9dc]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(authorStructuredData),
+        }}
+      />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(177,120,65,0.25),transparent_55%)]" />
       <div className="absolute -left-40 top-24 h-80 w-80 rounded-full bg-[#3a1f0a] opacity-60 blur-[120px]" />
       <div className="absolute -right-30 top-10 h-96 w-96 rounded-full bg-[#0f2a33] opacity-70 blur-[140px]" />
