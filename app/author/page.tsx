@@ -1,5 +1,6 @@
 import Image from "next/image";
 import authorImage from "../../assets/AuthotNormal.png";
+import authorSciFiDarkImage from "../../assets/AuthorSciFiDark.png";
 
 export default function AuthorPage() {
   const authorStructuredData = {
@@ -45,14 +46,27 @@ export default function AuthorPage() {
       <main className="relative mx-auto w-full max-w-6xl px-6 pb-24 pt-20">
         <section className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div className="flex justify-center lg:justify-start">
-            <Image
-              src={authorImage}
-              alt="Glenn Haertlein portrait"
-              width={scaledWidth}
-              height={scaledHeight}
-              className="h-auto w-auto rounded-2xl border border-white/10 shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
-              priority
-            />
+            <div
+              className="group relative overflow-hidden rounded-2xl border border-white/10 shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
+              style={{ width: scaledWidth, height: scaledHeight }}
+            >
+              <Image
+                src={authorImage}
+                alt="Glenn Haertlein portrait"
+                width={scaledWidth}
+                height={scaledHeight}
+                className="h-full w-full object-cover transition-opacity duration-200 group-hover:opacity-0"
+                priority
+              />
+              <Image
+                src={authorSciFiDarkImage}
+                alt="Glenn Haertlein sci-fi portrait"
+                width={scaledWidth}
+                height={scaledHeight}
+                className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                aria-hidden="true"
+              />
+            </div>
           </div>
 
           <div className="space-y-8">
