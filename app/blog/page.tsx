@@ -66,11 +66,6 @@ export default function BlogPage() {
               <p className="mt-4 whitespace-pre-line text-base leading-7 text-white/80">
                 {post.summary}
               </p>
-              <div className="mt-5 space-y-4 text-base leading-7 text-white/85">
-                {post.content.map((paragraph, idx) => (
-                  <p key={`${post.slug}-p-${idx}`}>{paragraph}</p>
-                ))}
-              </div>
               <div className="mt-6">
                 <Link
                   href={`/blog/${post.slug}`}
