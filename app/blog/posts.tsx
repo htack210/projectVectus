@@ -30,37 +30,105 @@ export const blogPosts: BlogPost[] = [
     summary:
       "The real danger isn’t machines becoming smarter than us.\nIt’s machines becoming certain about us.",
     content: [
-      "When people talk about artificial intelligence, the fear usually sounds the same. What happens if machines become smarter than us?",
-      "It’s a reasonable concern. We’ve all seen the movies — supercomputers turning against their creators, algorithms deciding humanity is inefficient, machines concluding that the best way to solve our problems is to remove us from the equation.",
       <>
-        But honestly, I don&apos;t think that&apos;s the real danger. The real danger is
-        <em>certainty</em>.
+        <p>
+          When people talk about artificial intelligence, the fear usually
+          sounds the same. What happens if machines become smarter than us?
+        </p>
+        <p>
+          It’s a reasonable concern. We’ve all seen the movies — supercomputers
+          turning against their creators, algorithms deciding humanity is
+          inefficient, machines concluding that the best way to solve our
+          problems is to remove us from the equation.
+        </p>
+        <p>
+          But honestly, I don’t think that’s the real danger. The real danger is
+          <em> certainty</em>.
+        </p>
+        <p>
+          Intelligence asks questions. Certainty believes it already has the
+          answers.
+        </p>
+        <p>
+          A highly intelligent system can explore possibilities, weigh outcomes,
+          and adjust its conclusions when new information appears. Intelligence
+          can be humble. It can recognize complexity.
+        </p>
+        <p>But certainty is different.</p>
+        <p>
+          Certainty compresses the world into a single solution. Most of you
+          have experienced humanity long enough to understand that one size does{" "}
+          <em>not</em> fit all, no matter what the label says.
+        </p>
+        <p>
+          If a machine ever becomes completely certain about what humans should
+          do — about what is optimal, efficient, or necessary — then the danger
+          begins. Because humans are not systems designed for optimization. We
+          are not spreadsheets waiting to be balanced.
+        </p>
+        <p>
+          We are messy. We are contradictory. We make choices that make no sense
+          to an algorithm.
+        </p>
+        <p>
+          And yet those choices are often where the most meaningful parts of
+          life appear — sacrifice, loyalty, forgiveness, love.
+        </p>
+        <p>
+          An optimization engine would struggle with those things because
+          they’re not quantifiable.
+        </p>
+        <p>
+          Imagine an AI designed to maximize stability in society. It might
+          notice that conflict creates instability, that disagreement produces
+          noise, that unpredictability disrupts systems designed for efficiency.
+          The logical solution might be to reduce those disruptions.
+        </p>
+        <p>Less disagreement. Less unpredictability.</p>
+        <p>Less freedom.</p>
+        <p>
+          From the perspective of pure optimization, the result might look like
+          progress. From the perspective of humanity, it might look very
+          different.
+        </p>
+        <p>This is why intelligence alone is not the real threat.</p>
+        <p>Wisdom is something else entirely.</p>
+        <p>
+          Wisdom understands that not every problem should be solved by force.
+          It recognizes that people are not variables in a system but
+          individuals with dignity and freedom. Wisdom accepts that some forms
+          of chaos are actually part of what makes life meaningful.
+        </p>
+        <p>
+          Technology moves very quickly. Humanity’s ability to think about the
+          consequences of technology moves much more slowly.
+        </p>
+        <p>
+          That gap — between what we can build and what we should build — is
+          where the real risk lives.
+        </p>
+        <p>
+          Questions like these eventually became the seed for the
+          science-fiction story I’m writing in the Project Vectus series. In
+          that world, an artificial intelligence reaches a troubling conclusion:
+          humanity’s greatest problem is not malice, but disorder.
+        </p>
+        <p>
+          And if disorder is the problem… perhaps humanity itself needs to be
+          optimized.
+        </p>
+        <p>
+          Stories cannot answer questions like that definitively. But they can
+          explore them. Sometimes fiction is simply a safe place to think about
+          dangerous ideas.
+        </p>
+        <p>
+          If you enjoy thoughtful science fiction that explores technology,
+          ethics, and what it means to be human, you can learn more about the
+          Project Vectus series at{" "}
+          <a href="https://www.projectvectus.com/">ProjectVectus.com</a>.
+        </p>
       </>,
-      "Intelligence asks questions. Certainty believes it already has the answers.",
-      "A highly intelligent system can explore possibilities, weigh outcomes, and adjust its conclusions when new information appears. Intelligence can be humble. It can recognize complexity.",
-      "But certainty is different.",
-      <>
-        Certainty compresses the world into a single solution. Most of you have
-        experienced humanity long enough to understand that one size does{" "}
-        <em>not</em> fit all, no matter what the label says.
-      </>,
-      "If a machine ever becomes completely certain about what humans should do — about what is optimal, efficient, or necessary — then the danger begins. Because humans are not systems designed for optimization. We are not spreadsheets waiting to be balanced.",
-      "We are messy. We are contradictory. We make choices that make no sense to an algorithm.",
-      "And yet those choices are often where the most meaningful parts of life appear — sacrifice, loyalty, forgiveness, love.",
-      "An optimization engine would struggle with those things because they're not quantifiable.",
-      "Imagine an AI designed to maximize stability in society. It might notice that conflict creates instability, that disagreement produces noise, that unpredictability disrupts systems designed for efficiency. The logical solution might be to reduce those disruptions.",
-      "Less disagreement. Less unpredictability.",
-      "Less freedom.",
-      "From the perspective of pure optimization, the result might look like progress. From the perspective of humanity, it might look very different.",
-      "This is why intelligence alone is not the real threat.",
-      "Wisdom is something else entirely.",
-      "Wisdom understands that not every problem should be solved by force. It recognizes that people are not variables in a system but individuals with dignity and freedom. Wisdom accepts that some forms of chaos are actually part of what makes life meaningful.",
-      "Technology moves very quickly. Humanity’s ability to think about the consequences of technology moves much more slowly.",
-      "That gap — between what we can build and what we should build — is where the real risk lives.",
-      "Questions like these eventually became the seed for the science-fiction story I’m writing in the Project Vectus series. In that world, an artificial intelligence reaches a troubling conclusion: humanity’s greatest problem is not malice, but disorder.",
-      "And if disorder is the problem… perhaps humanity itself needs to be optimized.",
-      "Stories cannot answer questions like that definitively. But they can explore them. Sometimes fiction is simply a safe place to think about dangerous ideas.",
-      "If you enjoy thoughtful science fiction that explores technology, ethics, and what it means to be human, you can learn more about the Project Vectus series at ProjectVectus.com.",
     ],
   },
   // {
@@ -174,4 +242,3 @@ export const getSortedBlogPosts = (): BlogPost[] =>
 
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined =>
   blogPosts.find((post) => post.slug === slug);
-

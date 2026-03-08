@@ -69,9 +69,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <p className="mt-4 whitespace-pre-line text-base leading-7 text-white/80">
             {post.summary}
           </p>
-          <div className="mt-6 space-y-4 text-base leading-7 text-white/85">
+          <div className="mt-6 space-y-4 text-base leading-7 text-white/85 [&_p]:mt-4 [&_p:first-child]:mt-0">
             {post.content.map((paragraph, idx) => (
-              <p key={`${post.slug}-p-${idx}`}>{paragraph}</p>
+              <div key={`${post.slug}-p-${idx}`}>
+                {typeof paragraph === "string" ? (
+                  <p>{paragraph}</p>
+                ) : (
+                  paragraph
+                )}
+              </div>
             ))}
           </div>
         </article>
