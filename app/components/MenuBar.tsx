@@ -10,6 +10,7 @@ const MenuBar = () => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Author", href: "/author" },
+    { label: "Blog", href: "/blog" },
     { label: "Characters", href: "/characters" },
     { label: "Get Newsletter", href: "/newsletter" },
   ];
@@ -40,7 +41,10 @@ const MenuBar = () => {
           {/* Navigation Links */}
           <div className="flex items-center space-x-1">
             {navItems.map((item) => {
-              const isActive = pathname === item.href;
+              const isActive =
+                item.href === "/"
+                  ? pathname === item.href
+                  : pathname.startsWith(item.href);
               return (
                 <Link
                   key={item.href}
