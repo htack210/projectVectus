@@ -74,6 +74,22 @@ export default function Home() {
               text: "Use the newsletter sign-up page at /newsletter to receive updates.",
             },
           },
+          {
+            "@type": "Question",
+            name: "What is The Circle?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Circle is a covert network in the Project Vectus world that opposes centralized control and fights to expose hidden systems of influence.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is Ascentive Dynamics?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Ascentive Dynamics is the powerful corporate force at the center of Project Vectus, driving advanced technology initiatives with far-reaching social consequences.",
+            },
+          },
         ],
       },
     ],
@@ -319,8 +335,8 @@ export default function Home() {
                   What is Project Vectus about?
                 </h3>
                 <p>
-                  A near-future sci-fi series exploring ethical AI, control,
-                  and the human cost of innovation.
+                  A near-future sci-fi series exploring ethical AI, control, and
+                  the human cost of innovation.
                 </p>
               </div>
               <div>
@@ -337,7 +353,31 @@ export default function Home() {
                   How do I get updates?
                 </h3>
                 <p>
-                  Visit <a href="/newsletter" className="underline">/newsletter</a> to sign up.
+                  Visit{" "}
+                  <a href="/newsletter" className="underline">
+                    /newsletter
+                  </a>{" "}
+                  to sign up.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#f2c37b]">
+                  What is The Circle?
+                </h3>
+                <p>
+                  The Circle is a covert resistance network in the Project
+                  Vectus world that opposes centralized control and fights to
+                  expose hidden systems of influence.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#f2c37b]">
+                  What is Ascentive Dynamics?
+                </h3>
+                <p>
+                  Ascentive Dynamics is the powerful corporate force at the
+                  center of Project Vectus, driving advanced technology
+                  initiatives with far-reaching social consequences.
                 </p>
               </div>
             </div>
