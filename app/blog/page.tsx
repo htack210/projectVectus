@@ -36,14 +36,15 @@ export default function BlogPage() {
           <p className="max-w-3xl text-lg leading-8 text-white/85 sm:text-xl">
             Updates, notes, and behind-the-scenes posts.
           </p>
-          <p className="rounded-xl border border-[#f2c37b]/35 bg-[#f2c37b]/10 px-4 py-3 text-sm leading-6 text-[#f7e9cf]/90">
+          {/* BLOGGING INSTRUCTIONS */}
+          {/* <p className="rounded-xl border border-[#f2c37b]/35 bg-[#f2c37b]/10 px-4 py-3 text-sm leading-6 text-[#f7e9cf]/90">
             To add or edit posts, update{" "}
             <code className="rounded bg-black/25 px-1.5 py-0.5">
-              app/blog/posts.ts
+              app/blog/posts.tsx
             </code>
             . Visitors can read blog posts but cannot edit them through the
             website.
-          </p>
+          </p> */}
         </section>
 
         <section className="mt-10 space-y-8">
@@ -58,7 +59,7 @@ export default function BlogPage() {
               <h2 className="mt-2 font-(--font-display) text-3xl leading-tight text-[#f7e9cf]">
                 {post.title}
               </h2>
-              <p className="mt-4 text-base leading-7 text-white/80">
+              <p className="mt-4 whitespace-pre-line text-base leading-7 text-white/80">
                 {post.summary}
               </p>
               <div className="mt-5 space-y-4 text-base leading-7 text-white/85">
