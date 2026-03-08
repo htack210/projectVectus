@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
       "A place for release notes, story-world insights, and behind-the-scenes writing updates.",
     content: [
       "This blog is where I will share updates about the Project Vectus series, upcoming releases, and story context that does not fit on the main pages.",
-      "I have intentionally set this up as a code-managed blog. To publish a new post, I can add a new object to app/blog/posts.ts and deploy. There is no public form or editor for visitors.",
+      "I have intentionally set this up as a code-managed blog. To publish a new post, I can add a new object to app/blog/posts.tsx and deploy. There is no public form or editor for visitors.",
       "Thanks for reading and following the series.",
     ],
   },
@@ -33,7 +33,7 @@ export const blogPosts: BlogPost[] = [
       "When people talk about artificial intelligence, the fear usually sounds the same. What happens if machines become smarter than us?",
       "It’s a reasonable concern. We’ve all seen the movies — supercomputers turning against their creators, algorithms deciding humanity is inefficient, machines concluding that the best way to solve our problems is to remove us from the equation.",
       <>
-        But honestly, I don't think that's the real danger. The real danger is{" "}
+        But honestly, I don&apos;t think that&apos;s the real danger. The real danger is
         <em>certainty</em>.
       </>,
       "Intelligence asks questions. Certainty believes it already has the answers.",
@@ -168,3 +168,10 @@ export const blogPosts: BlogPost[] = [
   //   ],
   // },
 ];
+
+export const getSortedBlogPosts = (): BlogPost[] =>
+  [...blogPosts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+
+export const getBlogPostBySlug = (slug: string): BlogPost | undefined =>
+  blogPosts.find((post) => post.slug === slug);
+

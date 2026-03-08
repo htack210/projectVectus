@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { blogPosts } from "./posts";
+import Link from "next/link";
+import { getSortedBlogPosts } from "./posts";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -14,9 +15,7 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
 });
 
 export default function BlogPage() {
-  const sortedPosts = [...blogPosts].sort((a, b) =>
-    b.publishedAt.localeCompare(a.publishedAt),
-  );
+  const sortedPosts = getSortedBlogPosts();
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] pt-16 text-[#efe9dc]">
@@ -57,7 +56,12 @@ export default function BlogPage() {
                 {dateFormatter.format(new Date(post.publishedAt))}
               </p>
               <h2 className="mt-2 font-(--font-display) text-3xl leading-tight text-[#f7e9cf]">
-                {post.title}
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="transition-colors hover:text-[#f2c37b]"
+                >
+                  {post.title}
+                </Link>
               </h2>
               <p className="mt-4 whitespace-pre-line text-base leading-7 text-white/80">
                 {post.summary}
@@ -66,6 +70,14 @@ export default function BlogPage() {
                 {post.content.map((paragraph, idx) => (
                   <p key={`${post.slug}-p-${idx}`}>{paragraph}</p>
                 ))}
+              </div>
+              <div className="mt-6">
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="inline-flex rounded-full border border-white/20 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/85 transition hover:border-white/45 hover:text-[#f2c37b]"
+                >
+                  Open Post Link
+                </Link>
               </div>
             </article>
           ))}
