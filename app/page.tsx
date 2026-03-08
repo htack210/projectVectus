@@ -365,9 +365,9 @@ export default function Home() {
                   What is The Circle?
                 </h3>
                 <p>
-                  The Circle is a covert resistance network in the Project
-                  Vectus world that opposes centralized control and fights to
-                  expose hidden systems of influence.
+                  The Circle is a covert network in the Project Vectus world
+                  that opposes centralized control and fights to expose hidden
+                  systems of influence.
                 </p>
               </div>
               <div>
