@@ -28,8 +28,8 @@ export default function AuthorPage() {
     ],
   };
 
-  const scaledWidth = Math.round(authorImage.width * 0.6);
-  const scaledHeight = Math.round(authorImage.height * 0.6);
+  const scaledWidth = Math.round(authorImage.width * 0.48);
+  const imageAspectRatio = `${authorImage.width} / ${authorImage.height}`;
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] pt-16 text-[#efe9dc]">
@@ -43,26 +43,26 @@ export default function AuthorPage() {
       <div className="absolute -left-40 top-24 h-80 w-80 rounded-full bg-[#3a1f0a] opacity-60 blur-[120px]" />
       <div className="absolute -right-30 top-10 h-96 w-96 rounded-full bg-[#0f2a33] opacity-70 blur-[140px]" />
 
-      <main className="relative mx-auto w-full max-w-6xl px-6 pb-24 pt-20">
-        <section className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+      <main className="relative mx-auto w-full max-w-6xl px-4 pb-20 pt-14 sm:px-6 sm:pb-24 sm:pt-20">
+        <section className="grid gap-8 lg:grid-cols-[minmax(260px,0.85fr)_1.15fr] lg:items-start lg:gap-12">
           <div className="flex justify-center lg:justify-start">
             <div
-              className="group relative overflow-hidden rounded-2xl border border-white/10 shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
-              style={{ width: scaledWidth, height: scaledHeight }}
+              className="group relative w-full overflow-hidden rounded-2xl border border-white/10 shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
+              style={{ maxWidth: scaledWidth, aspectRatio: imageAspectRatio }}
             >
               <Image
                 src={authorImage}
                 alt="Glenn Haertlein portrait"
-                width={scaledWidth}
-                height={scaledHeight}
+                fill
+                sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 85vw"
                 className="h-full w-full object-cover transition-opacity duration-200 group-hover:opacity-0"
                 priority
               />
               <Image
                 src={authorSciFiDarkImage}
                 alt="Glenn Haertlein sci-fi portrait"
-                width={scaledWidth}
-                height={scaledHeight}
+                fill
+                sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 85vw"
                 className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-200 group-hover:opacity-100"
                 aria-hidden="true"
               />
