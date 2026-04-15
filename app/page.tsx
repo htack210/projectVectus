@@ -1,6 +1,5 @@
 ﻿"use client";
 
-import Image from "next/image";
 
 export default function Home() {
   const homeStructuredData = {
@@ -88,13 +87,6 @@ export default function Home() {
     ],
   };
 
-  const covers = [
-    {
-      src: "/book-one-cover.png",
-      alt: "Project Vectus - Book One: I am Zoe cover",
-      amazonUrl: "https://www.amazon.com/dp/B0GJMQL3J8",
-    },
-  ];
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] pt-16 text-[#efe9dc]">
@@ -190,16 +182,18 @@ export default function Home() {
         <section className="relative">
           <div className="absolute -left-10 top-20 h-40 w-40 rounded-full border border-white/10 bg-white/5 blur-2xl" />
           <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-linear-to-b from-white/10 via-white/5 to-transparent p-6 shadow-[0_40px_120px_-60px_rgba(0,0,0,0.95)]">
-            <div className="mb-6 space-y-3 text-sm uppercase tracking-[0.3em] text-white/50" />
-            <div className="relative">
-              <Image
-                src={covers[0].src}
-                alt={covers[0].alt}
-                width={520}
-                height={780}
-                className="h-auto w-full rounded-2xl object-cover shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
-                priority
-              />
+            <div className="flex min-h-105 flex-col items-center justify-center gap-6 text-center">
+              <h2 className="font-(--font-display) text-3xl leading-tight text-[#f7e9cf] sm:text-4xl">
+                Project Vectus: I am Z.O.E.
+              </h2>
+              <p className="text-lg leading-8 text-white/85">
+                is book one of a planned five-book series.
+                <br />
+                The manuscript is currently in search of a publisher.
+              </p>
+              <p className="text-lg leading-8 text-white/85">
+                <i>Stay tuned to learn more.</i>
+              </p>
             </div>
           </div>
           <div className="mt-6 text-center text-[10px] tracking-wide text-white/40">
