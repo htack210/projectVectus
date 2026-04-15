@@ -100,7 +100,7 @@ export default function Home() {
       <div className="absolute -left-40 top-24 h-80 w-80 rounded-full bg-[#3a1f0a] opacity-60 blur-[120px]" />
       <div className="absolute -right-30 top-10 h-96 w-96 rounded-full bg-[#0f2a33] opacity-70 blur-[140px]" />
 
-      <main className="relative mx-auto flex w-full max-w-6xl flex-col gap-14 px-6 pb-24 pt-20 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12">
+      <main className="relative mx-auto flex w-full max-w-3xl flex-col gap-14 px-6 pb-24 pt-20">
         <section className="space-y-8">
           <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs uppercase tracking-[0.2em] text-white/70">
             <span className="h-1.5 w-1.5 rounded-full bg-[#f2c37b]" />
@@ -115,23 +115,23 @@ export default function Home() {
                   Book One:{" "}
                   <span className="font-(--font-display) italic">I am Zoë</span>
                 </h1>
-                <p className="max-w-xl text-lg font-medium leading-8 text-white/85 sm:text-xl">
+                <p className="text-lg font-medium leading-8 text-white/85 sm:text-xl">
                   <b>The Trial Was a Lie.</b>
                   <br />
                   <b>Survival Was Just the Beginning.</b>
                 </p>
-                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
                   A promising medical breakthrough was actually an off-book
                   experiment at the edge of human biology and artificial
                   intelligence.
                 </p>
-                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
                   Vance Carrick survived.
                 </p>
-                <p className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
                   But survival has consequences.{" "}
                 </p>
-                <details className="max-w-xl text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                <details className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
                   <summary className="cursor-pointer select-none text-base font-semibold text-[#f2c37b] transition hover:text-[#ffd7a4] focus:outline-none">
                     View more
                   </summary>
@@ -179,35 +179,7 @@ export default function Home() {
           </a>
         </section>
 
-        <section className="relative">
-          <div className="absolute -left-10 top-20 h-40 w-40 rounded-full border border-white/10 bg-white/5 blur-2xl" />
-          <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-linear-to-b from-white/10 via-white/5 to-transparent p-6 shadow-[0_40px_120px_-60px_rgba(0,0,0,0.95)]">
-            <div className="flex min-h-105 flex-col items-center justify-center gap-6 text-center">
-              <h2 className="font-(--font-display) text-3xl leading-tight text-[#f7e9cf] sm:text-4xl">
-                Project Vectus: I am Z.O.E.
-              </h2>
-              <p className="text-lg leading-8 text-white/85">
-                is book one of a planned five-book series.
-                <br />
-                The manuscript is currently in search of a publisher.
-              </p>
-              <p className="text-lg leading-8 text-white/85">
-                <i>Stay tuned to learn more.</i>
-              </p>
-            </div>
-          </div>
-          <div className="mt-6 text-center text-[10px] tracking-wide text-white/40">
-            Contact author at{" "}
-            <a
-              href="mailto:h.archer@projectvectus.com"
-              className="underline transition-colors hover:text-white/70"
-            >
-              h.archer@projectvectus.com
-            </a>
-          </div>
-        </section>
-
-        <section className="lg:col-span-2">
+        <section>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
             <h2 className="font-(--font-display) text-2xl text-[#f7e9cf] sm:text-3xl">
               FAQ
