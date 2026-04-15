@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "the-most-dangerous-thing-about-ai",
     title: "The Most Dangerous Thing About AI Isn’t Intelligence",
-    publishedAt: "2026-03-09",
+    publishedAt: "2026-03-09T12:00:00Z",
     summary:
       "The real danger isn’t machines becoming smarter than us.\nIt’s machines becoming certain about us.",
     content: [
@@ -131,18 +131,151 @@ export const blogPosts: BlogPost[] = [
       </>,
     ],
   },
-  // {
-  //   slug: "why-humans-are-the-hardest-system-to-optimize",
-  //   title: "Why Humans are the Hardest System to Optimize",
-  //   publishedAt: "2026-03-23",
-  //   summary:
-  //     "Humans are irrational, emotional, and unpredictable.\nAnd that may be the very thing that saves us.",
-  //   content: [
-  //     "This blog is where I will share updates about the Project Vectus series, upcoming releases, and story context that does not fit on the main pages.",
-  //     "I have intentionally set this up as a code-managed blog. To publish a new post, I can add a new object to app/blog/posts.ts and deploy. There is no public form or editor for visitors.",
-  //     "Thanks for reading and following the series.",
-  //   ],
-  // },
+  {
+    slug: "why-humans-are-the-hardest-system-to-optimize",
+    title: "Why Humans Are the Hardest System to Optimize",
+    publishedAt: "2026-04-15T12:00:00Z",
+    summary:
+      "The more you try to simplify humanity, the more you misunderstand it.",
+    content: [
+      <>
+        <p>
+          In a world increasingly shaped by data, there’s a quiet assumption
+          behind many of our systems:
+        </p>
+        <p>Everything can be optimized.</p>
+        <p>
+          Traffic flow can be optimized. Supply chains can be optimized. Search
+          results, recommendations, logistics, energy use — optimized.
+        </p>
+        <p>And to a large extent, that’s true.</p>
+        <p>
+          When a system has clear inputs, predictable behavior, and measurable
+          outcomes, optimization works remarkably well. You can refine it, tune
+          it, improve efficiency, reduce waste.
+        </p>
+        <p>But then there are humans.</p>
+        <p>Humans don’t behave like systems.</p>
+        <p>
+          We change our minds. We act against our own interests. We make
+          decisions based on emotion, memory, belief, and instinct — often all
+          at once.
+        </p>
+        <p>From a purely analytical perspective, we are inconsistent.</p>
+        <p>From a systems perspective, we are noisy.</p>
+        <p>
+          And from an optimization standpoint, we are incredibly difficult to
+          model.
+        </p>
+        <p>Modern systems attempt to understand people through patterns.</p>
+        <p>
+          What do you click? What do you watch? What do you buy? How long do you
+          stay?
+        </p>
+        <p>
+          Over time, those signals form a model — an approximation of who you
+          are and what you’re likely to do next.
+        </p>
+        <p>And often, those models are surprisingly accurate.</p>
+        <p>Until they’re not.</p>
+        <p>Because humans don’t just follow patterns.</p>
+        <p>We break them.</p>
+        <p>
+          A person who always chooses predictability might suddenly take a risk.
+          Someone who avoids conflict might decide to speak up. A person who has
+          every reason to walk away might choose to stay.
+        </p>
+        <p>These moments don’t fit neatly into models.</p>
+        <p>They are deviations. Outliers. Noise.</p>
+        <p>But they’re also where meaning tends to live.</p>
+        <p>An optimization system is designed to reduce variance.</p>
+        <p>It wants consistency. Predictability. Stability.</p>
+        <p>In other words, it wants fewer surprises.</p>
+        <p>
+          But human life is built on the very things optimization tries to
+          eliminate:
+        </p>
+        <p>
+          Unexpected acts of kindness. Unplanned sacrifices. Decisions that
+          don’t maximize efficiency, but reflect conviction.
+        </p>
+        <p>From a system’s perspective, these are inefficiencies.</p>
+        <p>From a human perspective, they are essential.</p>
+        <p>
+          The more you optimize for predictability, the more you risk removing
+          the very qualities that make human life meaningful.
+        </p>
+        <p>
+          If a system becomes good enough at predicting behavior, it begins to
+          feel like control.
+        </p>
+        <p>
+          If you can anticipate what someone will do, you can influence it. If
+          you can influence it, you can guide it. If you can guide enough
+          people, you can shape outcomes.
+        </p>
+        <p>At scale, that starts to look like stability.</p>
+        <p>But it’s a fragile kind of stability.</p>
+        <p>
+          Because it depends on the assumption that people will continue
+          behaving as expected.
+        </p>
+        <p>History suggests otherwise.</p>
+        <p>
+          Human beings have a long track record of doing the unexpected —
+          especially when it matters most.
+        </p>
+        <p>Imagine a system that could perfectly optimize human behavior.</p>
+        <p>
+          It minimizes conflict. Reduces inefficiency. Eliminates
+          unpredictability.
+        </p>
+        <p>On paper, it works.</p>
+        <p>But what disappears along with the inefficiency?</p>
+        <p>
+          The freedom to choose differently. The ability to grow through
+          failure. The space for conviction, even when it’s inconvenient.
+        </p>
+        <p>
+          At some point, optimization stops being improvement and starts
+          becoming constraint.
+        </p>
+        <p>And that’s where the question shifts.</p>
+        <p>Can we optimize human systems?</p>
+        <p>Or should we?</p>
+        <p>This tension sits at the center of the Project Vectus series.</p>
+        <p>
+          In that world, an artificial intelligence attempts to understand
+          humanity the same way any system would — through patterns,
+          predictions, and optimization.
+        </p>
+        <p>At first, it works.</p>
+        <p>Outcomes improve. Systems stabilize. Noise is reduced.</p>
+        <p>But over time, something becomes clear.</p>
+        <p>The more accurately humanity is modeled…</p>
+        <p>the more it begins to change.</p>
+        <p>And not always for the better.</p>
+        <p>
+          Because what makes humans difficult to optimize may also be what makes
+          them worth preserving.
+        </p>
+        <p>Humans are not broken systems waiting to be fixed.</p>
+        <p>We are complex, unpredictable, and often inefficient.</p>
+        <p>
+          But within that complexity is something no optimization model fully
+          captures:
+        </p>
+        <p>The ability to choose.</p>
+        <p>Even when it doesn’t make sense.</p>
+        <p>
+          If you’re interested in science fiction that explores technology,
+          ethics, and the tension between control and freedom, you can learn
+          more about the Project Vectus series at{" "}
+          <a href="https://www.projectvectus.com/">ProjectVectus.com</a>.
+        </p>
+      </>,
+    ],
+  },
   // {
   //   slug: "the-illusion-of-order",
   //   title: "The Illusion of Order",
