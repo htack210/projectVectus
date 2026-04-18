@@ -276,6 +276,69 @@ export const blogPosts: BlogPost[] = [
       </>,
     ],
   },
+  {
+    slug: "how-it-came-to-be",
+    title: "How Project Vectus Came to Be",
+    publishedAt: "2026-04-18T12:00:00Z",
+    summary:
+      "I was too broke to buy lumber, so I resurrected an old manuscript.",
+    content: [
+      <>
+        <p>
+          Today I submitted <i>Project Vectus: I Am Z.O.E.</i> to a literary
+          agent. We’ll see how that goes.
+        </p>
+        <p>But how did I get here?</p>
+        <p>
+          It started because I couldn’t find work as a programmer. I used to
+          write Java back in the day.
+        </p>
+        <p>
+          Try as I might to find something in programming with my skill set, I
+          just couldn’t land anything. And coding is one of those skills that
+          atrophies when you’re not in it every day.
+        </p>
+        <p>
+          I got discouraged. And when I get discouraged, I usually go to Home
+          Depot, buy some lumber and build something. Once I got so discuraged I
+          almost built a tree.
+        </p>
+        <p>
+          This time around I was too broke to go to Home Depot to buy lumber.
+        </p>
+        <p>
+          So I resurrected an old book manuscript I wrote twenty years ago.
+          Looking at it now, with twenty more years’ worth of life experience,
+          I’m glad it never saw light of day. The wrting was clunky, the
+          characters and story had good bones, but it just wasn’t ready. Among
+          other things, the plot resolved too quickly and I thought,{" "}
+          <i>I could probably stretch this out into a small series.</i>
+        </p>
+        <p>
+          So, I started and wrote Book One.
+          <br />
+          Did I end up sacrificing things to pursue this dream? Yes. I could
+          have focused more on rebuilding my coding skills and pushing for a
+          coding job, but the reality is, at my age (and this is purely my own
+          opinion) landing a coding job is just as much a dream as getting a
+          book published.
+        </p>
+        <p>
+          Besides, this book and the series turned into a passion and I just
+          can&apos;t let it go. So, I finished book one.
+        </p>
+        <p>
+          I finished book two aas well, but it still needs to go through
+          revisions.
+        </p>
+        <p>
+          I like the characters. I like the plotline. I like where the story is
+          headed. Now I get to see if anyone else does.
+        </p>
+        <p>We&apos;ll see how that goes!</p>
+      </>,
+    ],
+  },
   // {
   //   slug: "the-illusion-of-order",
   //   title: "The Illusion of Order",
@@ -290,7 +353,7 @@ export const blogPosts: BlogPost[] = [
   // },
   // {
   //   slug: "when-intelligence-outruns-wisdom",
-  //   title: "What Happnes When Intelligence Outruns Wisdom?",
+  //   title: "What Happens When Intelligence Outruns Wisdom?",
   //   publishedAt: "2026-04-20",
   //   summary:
   //     "Humanity has always built tools faster than it builds the wisdom to use them.",
