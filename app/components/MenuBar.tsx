@@ -10,7 +10,7 @@ const MenuBar = () => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Author", href: "/author" },
-    { label: "Blog", href: "/blog" },
+    // { label: "Blog", href: "/blog" },
     { label: "Characters", href: "/characters" },
     // { label: "Get Newsletter", href: "/newsletter" },
   ];
