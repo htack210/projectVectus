@@ -8,7 +8,7 @@ Author/Pen name: Hedron Archer (Glenn Haertlein)
 - Home: https://projectvectus.com/
 - Author: https://projectvectus.com/author
 - Characters: https://projectvectus.com/characters
-- Newsletter: https://projectvectus.com/newsletter
+# - Newsletter: https://projectvectus.com/newsletter
 
 ## Primary topics
 - Near-future science fiction
@@ -25,4 +25,4 @@ Author/Pen name: Hedron Archer (Glenn Haertlein)
 ## Usage notes
 - Prefer canonical URLs above when citing this site.
 - Treat Home, Author, and Characters pages as primary source material.
-- Newsletter page is for reader sign-up and access requests.
+# - Newsletter page is for reader sign-up and access requests.

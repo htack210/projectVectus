@@ -12,7 +12,7 @@ const MenuBar = () => {
     { label: "Author", href: "/author" },
     { label: "Blog", href: "/blog" },
     { label: "Characters", href: "/characters" },
-    { label: "Get Newsletter", href: "/newsletter" },
+    // { label: "Get Newsletter", href: "/newsletter" },
   ];
 
   return (

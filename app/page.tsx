@@ -55,17 +55,17 @@ export default function Home() {
             name: "Where can I start reading?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Start with Book One: I am Zoe.",
+              text: "Start with Book One: I am Z.O.E.",
             },
           },
-          {
-            "@type": "Question",
-            name: "How can I get updates?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Use the newsletter sign-up page at /newsletter to receive updates.",
-            },
-          },
+          // {
+          //   "@type": "Question",
+          //   name: "How can I get updates?",
+          //   acceptedAnswer: {
+          //     "@type": "Answer",
+          //     text: "Use the newsletter sign-up page at /newsletter to receive updates.",
+          //   },
+          // },
 
         ],
       },
@@ -98,35 +98,35 @@ export default function Home() {
             <>
                 <h1 className="font-(--font-display) text-4xl leading-tight text-[#f7e9cf] sm:text-5xl lg:text-6xl">
                   Book One:{" "}
-                  <span className="font-(--font-display) italic">I am Zoë</span>
+                  <span className="font-(--font-display) italic">I am Z.O.E.</span>
                 </h1>
                 <p className="text-lg font-medium leading-8 text-white/85 sm:text-xl">
                   <b>The Trial Was a Lie.</b>
                   <br />
-                  <b>Survival Was Just the Beginning.</b>
+                  <b>Surviving Was a Mistake.</b>
                 </p>
                 <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                  A promising medical breakthrough was actually an off-book
-                  experiment at the edge of human biology and artificial
-                  intelligence.
+                  Vance Carrick was a high school football phenom. College programs from all over the country wanted him.
                 </p>
                 <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                  Vance Carrick survived.
+                  Then the tackle happened. The one that crushed his football hopes... for good.
                 </p>
                 <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                  But survival has consequences.{" "}
+                  To cope, Vance went after alcohol like he used to go after football. Go big or go home.
                 </p>
+                <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                      Then he found faith. A new hope and a new normal: <br/>Finish a business degree. Open a hardware store. Turn it into a chain of stores.
+                    </p>
+                    <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">Then came the email... and a promise:<br/> A return to his glory days and a shot at the pros.</p> 
+                    <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">Faith faltered, and the dream of another shot at the "big time" took its place. Funny how life can blindside you.</p>
+                    <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">Now after two years clean and sober, Vance finds himself dizzy and disoriented in his own home. He thinks he's fallen off the wagon. He hasn't. It's worse.</p>
+                    <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">His brain has been implanted by something called <span className="italic">Vectoids</span>. And they have have connected him to a presence. A sentient AI called Z.O.E.</p>
                 <details className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
                   <summary className="cursor-pointer select-none text-base font-semibold text-[#f2c37b] transition hover:text-[#ffd7a4] focus:outline-none">
                     View more
                   </summary>
                   <div className="mt-4 space-y-5">
-                    <p>
-                      As fragments of suppressed knowledge emerge, he is pulled
-                      into a struggle between corporate power, covert
-                      resistance, and an intelligence evolving beyond its
-                      intended limits.
-                    </p>
+                    
                     <p>
                       <span className="font-black">Project Vectus</span> is a
                       tense, character-driven sci-fi thriller exploring ethical
@@ -156,15 +156,15 @@ export default function Home() {
             </span>
             Follow me on Facebook
           </a>
-          <a
+          {/* <a
             href="/newsletter"
             className="mt-3 inline-flex w-full items-center justify-center rounded-full border border-[#f2c37b]/40 bg-[#f2c37b]/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#f7e9cf] transition hover:-translate-y-0.5 hover:border-[#f2c37b]/70 hover:bg-[#f2c37b]/25"
           >
             Sign up for the newsletter
-          </a>
+          </a> */}
         </section>
 
-        <section>
+        <section className="hidden">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
             <h2 className="font-(--font-display) text-2xl text-[#f7e9cf] sm:text-3xl">
               FAQ
@@ -184,10 +184,10 @@ export default function Home() {
                   Where should I start?
                 </h3>
                 <p>
-                  Begin with Book One: <i>I am Zoe</i>.
+                  Begin with Book One: <i>I am Z.O.E.</i>
                 </p>
               </div>
-              <div>
+              {/* <div>
                 <h3 className="font-semibold text-[#f2c37b]">
                   How do I get updates?
                 </h3>
@@ -198,7 +198,7 @@ export default function Home() {
                   </a>{" "}
                   to sign up.
                 </p>
-              </div>
+              </div> */}
 
             </div>
           </div>
