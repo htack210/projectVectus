@@ -1,6 +1,5 @@
 ﻿"use client";
 
-
 export default function Home() {
   const homeStructuredData = {
     "@context": "https://schema.org",
@@ -66,12 +65,10 @@ export default function Home() {
           //     text: "Use the newsletter sign-up page at /newsletter to receive updates.",
           //   },
           // },
-
         ],
       },
     ],
   };
-
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0b0a0d] pt-16 text-[#efe9dc]">
@@ -96,46 +93,69 @@ export default function Home() {
               Project Vectus
             </p>
             <>
-                <h1 className="font-(--font-display) text-4xl leading-tight text-[#f7e9cf] sm:text-5xl lg:text-6xl">
-                  Book One:{" "}
-                  <span className="font-(--font-display) italic">I am Z.O.E.</span>
-                </h1>
-                <p className="text-lg font-medium leading-8 text-white/85 sm:text-xl">
-                  <b>The Trial Was a Lie.</b>
-                  <br />
-                  <b>Surviving Was a Mistake.</b>
-                </p>
-                <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                  Vance Carrick was a high school football phenom. College programs from all over the country wanted him.
-                </p>
-                <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                  Then the tackle happened. The one that crushed his football hopes... for good.
-                </p>
-                <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                  To cope, Vance went after alcohol like he used to go after football. Go big or go home.
-                </p>
-                <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                      Then he found faith. A new hope and a new normal: <br/>Finish a business degree. Open a hardware store. Turn it into a chain of stores.
-                    </p>
-                    <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">Then came the email. A clinical trial and a promise:<br/>His body restored to its former glory and maybe a shot to go pro.</p> 
-                    <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">Faith faltered, and the dream of another chance at the "big time" took its place.</p>
-                    <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">Now after two years clean and sober, Vance finds himself dizzy and disoriented in his own home. He thinks he's fallen off the wagon. He hasn't. It's worse.</p>
-                    <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl"><span className="italic">Vectoids</span> have been implanted in his brain. And they have connected him to a presence. A sentient AI called Z.O.E.</p>
-                <details className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                  <summary className="cursor-pointer select-none text-base font-semibold text-[#f2c37b] transition hover:text-[#ffd7a4] focus:outline-none">
-                    View more
-                  </summary>
-                  <div className="mt-4 space-y-5">
-                    
-                    <p>
-                      <span className="font-black">Project Vectus</span> is a
-                      tense, character-driven sci-fi thriller exploring ethical
-                      AI, control, and the dangerous gap between intelligence
-                      and wisdom.
-                    </p>
-                  </div>
-                </details>
-              </>
+              <h1 className="font-(--font-display) text-4xl leading-tight text-[#f7e9cf] sm:text-5xl lg:text-6xl">
+                Book One:{" "}
+                <span className="font-(--font-display) italic">
+                  I am Z.O.E.
+                </span>
+              </h1>
+              <p className="text-lg font-medium leading-8 text-white/85 sm:text-xl">
+                <b>The Trial Was a Lie.</b>
+                <br />
+                <b>Surviving Was a Mistake.</b>
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                Vance Carrick was a high school football phenom. College
+                programs from all over the country wanted him.
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                Then the tackle happened. The one that crushed his football
+                hopes... for good.
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                To cope, Vance went after alcohol like he used to go after
+                football. Go big or go home.
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                Then he found faith. Two years clean and sober. And a new
+                normal: <br />
+                Finish a business degree. Open a hardware store. Turn it into a
+                chain of stores.
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                Then came the email. A clinical trial and a promise:
+                <br />
+                His body restored to its former glory and maybe a shot to go
+                pro.
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                Faith faltered, and the dream of another chance at the "big
+                time" took its place.
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                But now he finds himself dizzy and disoriented in his own home.
+                He thinks he's fallen off the wagon. He hasn't. It's worse. He
+                survived the trial.
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                <span className="italic">Vectoids</span> have been implanted in
+                his brain. And they have connected him to a presence. A sentient
+                AI called Z.O.E.
+              </p>
+              <details className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                <summary className="cursor-pointer select-none text-base font-semibold text-[#f2c37b] transition hover:text-[#ffd7a4] focus:outline-none">
+                  View more
+                </summary>
+                <div className="mt-4 space-y-5">
+                  <p>
+                    <span className="font-black">Project Vectus</span> is a
+                    tense, character-driven sci-fi thriller exploring ethical
+                    AI, control, and the dangerous gap between intelligence and
+                    wisdom.
+                  </p>
+                </div>
+              </details>
+            </>
           </div>
 
           <a
@@ -199,7 +219,6 @@ export default function Home() {
                   to sign up.
                 </p>
               </div> */}
-
             </div>
           </div>
         </section>
