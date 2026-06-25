@@ -12,6 +12,8 @@ const MenuBar = () => {
     { label: "Author", href: "/author" },
     // { label: "Blog", href: "/blog" },
     { label: "Characters", href: "/characters" },
+    { label: "The Circle", href: "/circle" },
+    { label: "Ascentive", href: "/ascentive" },
     // { label: "Get Newsletter", href: "/newsletter" },
   ];
 
@@ -33,7 +35,7 @@ const MenuBar = () => {
                 className="object-contain"
               />
             </div>
-            <span className="font-medium text-[#f7e9cf] font-[family:var(--font-display)] text-lg">
+            <span className="font-(--font-display) text-lg font-medium text-[#f7e9cf]">
               Project Vectus
             </span>
           </Link>
