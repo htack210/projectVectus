@@ -28,7 +28,7 @@ export default function AuthorPage() {
     ],
   };
 
-  const scaledWidth = Math.round(authorImage.width * 0.48);
+  const scaledWidth = Math.round(authorImage.width * 0.24);
   const imageAspectRatio = `${authorImage.width} / ${authorImage.height}`;
 
   return (
