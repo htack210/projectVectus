@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import heroCaveImage from "@/assets/daniel-burka-facU72FcKBI-unsplash.jpg";
 import cavernImage from "@/assets/bradley-dunn-rtOD6PdRAlU-unsplash.jpg";
+import limestoneImage from "@/assets/pexels-iftekharul-jebal-168783913-10959260.jpg";
 
 export const metadata: Metadata = {
   title: "Hollow Ridge Caverns — Tours & Visits",
@@ -247,6 +248,16 @@ export default function ToursPage() {
             </p>
           </section>
 
+          {/* Limestone photo */}
+          <div className="relative h-64 w-full overflow-hidden rounded-xl border border-[#1a1a2e]/10 shadow-md sm:h-80">
+            <Image
+              src={limestoneImage}
+              alt="Limestone formations inside Hollow Ridge Caverns"
+              fill
+              className="object-cover"
+            />
+          </div>
+
           <div className="h-px bg-[#1a1a2e]/15" />
 
           {/* Make a day of it */}
@@ -384,6 +395,15 @@ export default function ToursPage() {
                 className="underline hover:text-[#5c4a1e]"
               >
                 Unsplash
+              </a>
+            </p>
+            <p>
+              Photo by{" "}
+              <a
+                href="https://www.pexels.com/photo/limestone-inside-the-cave-10959260/"
+                className="underline hover:text-[#5c4a1e]"
+              >
+                Iftekharul Jebal
               </a>
             </p>
           </div>
