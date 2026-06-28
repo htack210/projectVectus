@@ -134,7 +134,7 @@ export default function CirclePage() {
 
           {/* Action links */}
           <div className="flex flex-wrap gap-4 pt-2">
-            {["Inquire", "Visit the Cavern System", "Published Findings"].map((label) => (
+            {["Inquire", "Published Findings"].map((label) => (
               <button
                 key={label}
                 className="rounded border border-[#1a1a2e]/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-[#1a1a2e]/60 transition-colors hover:border-[#5c4a1e]/60 hover:text-[#5c4a1e]"
@@ -142,6 +142,12 @@ export default function CirclePage() {
                 {label}
               </button>
             ))}
+            <Link
+              href="/circle/tours"
+              className="rounded border border-[#1a1a2e]/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-[#1a1a2e]/60 transition-colors hover:border-[#5c4a1e]/60 hover:text-[#5c4a1e]"
+            >
+              Visit the Cavern System
+            </Link>
             <Link
               href="/circle/onboarding"
               className="rounded border border-[#1a1a2e]/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-[#1a1a2e]/60 transition-colors hover:border-[#5c4a1e]/60 hover:text-[#5c4a1e]"
