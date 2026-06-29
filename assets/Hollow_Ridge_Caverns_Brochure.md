@@ -2,13 +2,13 @@
 
 ## Discover the world beneath the mountain.
 
-Tucked into the wooded foothills of the Blue Ridge, just minutes from Taylors and Greenville, lies one of the Southeast's most remarkable underground wonders. For tens of thousands of years, water and stone have shaped Hollow Ridge into a network of vast chambers, glittering formations, and quiet underground passages. Today, a portion of that network is open to visitors of all ages, ready to be explored.
+Tucked into the wooded foothills of the Blue Ridge, just minutes from Taylors and Greenville, lies one of the Southeast's most remarkable underground wonders. For centuries, water and stone have shaped Hollow Ridge into a network of vast chambers, glittering formations, and quiet underground passages. Today, a portion of that network is open to visitors of all ages, ready to be explored.
 
 Step inside, and step out of the ordinary.
 
 ## A Carolina treasure, beautifully preserved
 
-Hollow Ridge Caverns is a working heritage site — an active research and conservation area where modern science meets ancient stone. Our guided tours give you safe, accessible passage through illuminated chambers, breathtaking formations, and corridors that have stood unchanged for tens of thousands of years.
+Hollow Ridge Caverns is a working heritage site — an active research and conservation area where modern science meets ancient stone. Our guided tours give you safe, accessible passage through illuminated chambers, breathtaking formations, and corridors that have stood unchanged for centuries.
 
 Highlights include:
 

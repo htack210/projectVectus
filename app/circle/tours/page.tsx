@@ -65,7 +65,7 @@ export default function ToursPage() {
               research and conservation area where modern science meets ancient
               stone. Our guided tours give you safe, accessible passage through
               illuminated chambers, breathtaking formations, and corridors that
-              have stood unchanged for tens of thousands of years.
+              have stood unchanged for centuries.
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2">
