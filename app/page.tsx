@@ -1,5 +1,7 @@
 ﻿"use client";
 
+import Image from "next/image";
+
 export default function Home() {
   const homeStructuredData = {
     "@context": "https://schema.org",
@@ -82,7 +84,7 @@ export default function Home() {
       <div className="absolute -left-40 top-24 h-80 w-80 rounded-full bg-[#3a1f0a] opacity-60 blur-[120px]" />
       <div className="absolute -right-30 top-10 h-96 w-96 rounded-full bg-[#0f2a33] opacity-70 blur-[140px]" />
 
-      <main className="relative mx-auto flex w-full max-w-3xl flex-col gap-14 px-6 pb-24 pt-20">
+      <main className="relative mx-auto flex w-full max-w-5xl flex-col gap-14 px-6 pb-24 pt-20 lg:grid lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-12">
         <section className="space-y-8">
           <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-xs uppercase tracking-[0.2em] text-white/70">
             <span className="h-1.5 w-1.5 rounded-full bg-[#f2c37b]" />
@@ -128,25 +130,25 @@ export default function Home() {
                 His body restored to its former glory and maybe a shot to go
                 pro.
               </p>
-              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                Faith faltered, and the dream of another chance at the "big
-                time" took its place.
-              </p>
-              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                But now he finds himself dizzy and disoriented in his own home.
-                He thinks he's fallen off the wagon. He hasn't. It's worse. He
-                survived the trial.
-              </p>
-              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                <span className="italic">Vectoids</span> have been implanted in
-                his brain. And they have connected him to a presence. A sentient
-                AI called Z.O.E.
-              </p>
               <details className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
                 <summary className="cursor-pointer select-none text-base font-semibold text-[#f2c37b] transition hover:text-[#ffd7a4] focus:outline-none">
                   View more
                 </summary>
                 <div className="mt-4 space-y-5">
+                  <p>
+                    Faith faltered, and the dream of another chance at the
+                    "big time" took its place.
+                  </p>
+                  <p>
+                    But now he finds himself dizzy and disoriented in his own
+                    home. He thinks he's fallen off the wagon. He hasn't. It's
+                    worse. He survived the trial.
+                  </p>
+                  <p>
+                    <span className="italic">Vectoids</span> have been
+                    implanted in his brain. And they have connected him to a
+                    presence. A sentient AI called Z.O.E.
+                  </p>
                   <p>
                     <span className="font-black">Project Vectus</span> is a
                     tense, character-driven sci-fi thriller exploring ethical
@@ -182,6 +184,28 @@ export default function Home() {
           >
             Sign up for the newsletter
           </a> */}
+        </section>
+
+        <section className="mx-auto w-48 sm:w-64 lg:mx-0 lg:w-full">
+          <Image
+            src="/FrontCoverNew.png"
+            alt="Project Vectus - Book One: I am Z.O.E. cover"
+            width={520}
+            height={780}
+            className="h-auto w-full rounded-2xl object-cover shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
+            priority
+          />
+          <p className="mt-4 text-center text-sm uppercase tracking-[0.25em] text-white/60">
+            Coming soon...
+          </p>
+          <a
+            href="https://app.novelium.com/read/S5bNfRR"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex w-full items-center justify-center gap-3 rounded-full border border-[#f2c37b]/40 bg-[#f2c37b]/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#f7e9cf] transition hover:-translate-y-0.5 hover:border-[#f2c37b]/70 hover:bg-[#f2c37b]/25"
+          >
+            Read a sample
+          </a>
         </section>
 
         <section className="hidden">
