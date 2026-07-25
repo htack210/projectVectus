@@ -160,7 +160,7 @@ export default function Home() {
             </>
           </div>
 
-          <a
+          {/* <a
             href="https://www.facebook.com/ntspeak/"
             target="_blank"
             rel="noopener noreferrer"
@@ -177,7 +177,7 @@ export default function Home() {
               </svg>
             </span>
             Follow me on Facebook
-          </a>
+          </a> */}
           {/* <a
             href="/newsletter"
             className="mt-3 inline-flex w-full items-center justify-center rounded-full border border-[#f2c37b]/40 bg-[#f2c37b]/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#f7e9cf] transition hover:-translate-y-0.5 hover:border-[#f2c37b]/70 hover:bg-[#f2c37b]/25"
@@ -188,7 +188,7 @@ export default function Home() {
 
         <section className="mx-auto w-48 sm:w-64 lg:mx-0 lg:w-full">
           <Image
-            src="/FrontCoverNew.png"
+            src="/FrontCover_Saleve_new.png"
             alt="Project Vectus - Book One: I am Z.O.E. cover"
             width={520}
             height={780}
