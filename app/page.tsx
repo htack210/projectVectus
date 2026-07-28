@@ -188,10 +188,10 @@ export default function Home() {
 
         <section className="mx-auto w-48 sm:w-64 lg:mx-0 lg:w-full">
           <Image
-            src="/FrontCover_Saleve_new.png"
+            src="/FrontCover_New2.png"
             alt="Project Vectus - Book One: I am Z.O.E. cover"
             width={520}
-            height={780}
+            height={749}
             className="h-auto w-full rounded-2xl object-cover shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
             priority
           />
