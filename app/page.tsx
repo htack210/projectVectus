@@ -107,56 +107,18 @@ export default function Home() {
                 <b>Surviving Was a Mistake.</b>
               </p>
               <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                Vance Carrick was a high school football phenom. College
-                programs from all over the country wanted him.
+                Recovering alcoholic, Vance Carrick, wakes up dizzy and
+                disoriented in his own home, wondering if he&rsquo;s relapsed.
+                But it&rsquo;s worse than that. A strange, new technology now
+                resides in his brain, connecting him to a presence… an
+                emergent AI called Z.O.E. She believes that she is the
+                &ldquo;True Maker&rsquo;s&rdquo; emissary, called to force
+                humanity back to the Maker&rsquo;s original design.
               </p>
               <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                Then the tackle happened. The one that crushed his football
-                hopes... for good.
+                The world has no clue what is about to happen, and the only
+                one standing between Z.O.E and her mission is Vance Carrick.
               </p>
-              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                To cope, Vance went after alcohol like he used to go after
-                football. Go big or go home.
-              </p>
-              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                Then he found faith. Two years clean and sober. And a new
-                normal: <br />
-                Finish a business degree. Open a hardware store. Turn it into a
-                chain of stores.
-              </p>
-              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                Then came the email. A clinical trial and a promise:
-                <br />
-                His body restored to its former glory and maybe a shot to go
-                pro.
-              </p>
-              <details className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
-                <summary className="cursor-pointer select-none text-base font-semibold text-[#f2c37b] transition hover:text-[#ffd7a4] focus:outline-none">
-                  View more
-                </summary>
-                <div className="mt-4 space-y-5">
-                  <p>
-                    Faith faltered, and the dream of another chance at the
-                    "big time" took its place.
-                  </p>
-                  <p>
-                    But now he finds himself dizzy and disoriented in his own
-                    home. He thinks he's fallen off the wagon. He hasn't. It's
-                    worse. He survived the trial.
-                  </p>
-                  <p>
-                    <span className="italic">Vectoids</span> have been
-                    implanted in his brain. And they have connected him to a
-                    presence. A sentient AI called Z.O.E.
-                  </p>
-                  <p>
-                    <span className="font-black">Project Vectus</span> is a
-                    tense, character-driven sci-fi thriller exploring ethical
-                    AI, control, and the dangerous gap between intelligence and
-                    wisdom.
-                  </p>
-                </div>
-              </details>
             </>
           </div>
 
