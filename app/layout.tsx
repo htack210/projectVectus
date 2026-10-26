@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Project Vectus",
     images: [
       {
-        url: "https://projectvectus.com/FrontCover_New2.png",
+        url: "https://projectvectus.com/PVBK1_cover_1200x1800.jpg",
         width: 1200,
         height: 630,
         alt: "Project Vectus book cover",

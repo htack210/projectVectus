@@ -101,6 +101,7 @@ export default function Home() {
                   I am Z.O.E.
                 </span>
               </h1>
+              {/* Previous blurb (hidden)
               <p className="text-lg font-medium leading-8 text-white/85 sm:text-xl">
                 <b>The Trial Was a Lie.</b>
                 <br />
@@ -118,6 +119,34 @@ export default function Home() {
               <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
                 The world has no clue what is about to happen, and the only
                 one standing between Z.O.E and her mission is Vance Carrick.
+              </p>
+              */}
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                At 2:30 a.m., Vance Carrick is in his own kitchen with a
+                splitting headache, months of missing memory, and a disguised
+                voice behind him telling him not to turn around.
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                The voice belongs to the woman who interviewed him for a
+                clinical trial in Switzerland. She isn’t who she said she was.
+                And the trial was never about fixing his broken body.
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                Something is living in Vance’s head: microscopic machines built
+                by Ascentive Dynamics. Along with them are the memories of a
+                murdered scientist, and a doorway to Zoë, an artificial mind
+                hidden in a mountain above Lake Geneva. Zoë has read everything
+                ever written by humanity. She has also studied the Scriptures
+                closely and decided that the world needs judging.
+              </p>
+              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+                A small team of scientists, operatives and androids, part of a
+                clandestine organization called The Circle, is racing to stop
+                Ascentive’s plans to expand Zoë’s reach. Their only
+                counterplan runs straight through Vance.
+              </p>
+              <p className="text-lg font-normal italic leading-8 text-white/85 sm:text-xl">
+                Book One of Project Vectus
               </p>
             </>
           </div>
@@ -150,24 +179,16 @@ export default function Home() {
 
         <section className="mx-auto w-48 sm:w-64 lg:mx-0 lg:w-full">
           <Image
-            src="/FrontCover_New2.png"
+            src="/PVBK1_cover_1200x1800.jpg"
             alt="Project Vectus - Book One: I am Z.O.E. cover"
             width={520}
-            height={749}
+            height={780}
             className="h-auto w-full rounded-2xl object-cover shadow-[0_25px_70px_rgba(0,0,0,0.7)]"
             priority
           />
           <p className="mt-4 text-center text-sm uppercase tracking-[0.25em] text-white/60">
-            Coming soon...
+            Releasing Mid-January
           </p>
-          <a
-            href="https://app.novelium.com/read/S5bNfRR"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex w-full items-center justify-center gap-3 rounded-full border border-[#f2c37b]/40 bg-[#f2c37b]/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#f7e9cf] transition hover:-translate-y-0.5 hover:border-[#f2c37b]/70 hover:bg-[#f2c37b]/25"
-          >
-            Read a sample
-          </a>
         </section>
 
         <section className="hidden">
