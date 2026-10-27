@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const homeStructuredData = {
@@ -189,6 +190,12 @@ export default function Home() {
           <p className="mt-4 text-center text-sm uppercase tracking-[0.25em] text-white/60">
             Releasing Mid-January
           </p>
+          <Link
+            href="/arc"
+            className="mt-4 inline-flex w-full items-center justify-center gap-3 rounded-full border border-[#f2c37b]/40 bg-[#f2c37b]/15 px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.2em] text-[#f7e9cf] transition hover:-translate-y-0.5 hover:border-[#f2c37b]/70 hover:bg-[#f2c37b]/25"
+          >
+            Become an ARC reader for book one...
+          </Link>
         </section>
 
         <section className="hidden">
