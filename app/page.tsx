@@ -122,7 +122,7 @@ export default function Home() {
                 one standing between Z.O.E and her mission is Vance Carrick.
               </p>
               */}
-              <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
+              <p className="text-lg font-bold leading-8 text-white/85 sm:text-xl">
                 At 2:30 a.m., Vance Carrick is in his own kitchen with a
                 splitting headache, months of missing memory, and a disguised
                 voice behind him telling him not to turn around.
@@ -143,11 +143,10 @@ export default function Home() {
               <p className="text-lg font-normal leading-8 text-white/85 sm:text-xl">
                 A small team of scientists, operatives and androids, part of a
                 clandestine organization called The Circle, is racing to stop
-                Ascentive’s plans to expand Zoë’s reach. Their only
-                counterplan runs straight through Vance.
+                Zoë from extending her reach. That plan runs straight through Vance.
               </p>
               <p className="text-lg font-normal italic leading-8 text-white/85 sm:text-xl">
-                Book One of Project Vectus
+                I Am Z.O.E. is the first novel in the Project Vectus Series
               </p>
             </>
           </div>
@@ -188,7 +187,7 @@ export default function Home() {
             priority
           />
           <p className="mt-4 text-center text-sm uppercase tracking-[0.25em] text-white/60">
-            Releasing Mid-January
+            Releasing on January 12, 2027
           </p>
           <Link
             href="/arc"
